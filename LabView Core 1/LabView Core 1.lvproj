@@ -32,6 +32,10 @@
 		<Item Name="Analyze and Visualize Data.vi" Type="VI" URL="../Analyze and Visualize Data.vi"/>
 		<Item Name="Average.vi" Type="VI" URL="../Average.vi"/>
 		<Item Name="Deg2Fah.vi" Type="VI" URL="../Deg2Fah.vi"/>
+		<Item Name="Loop Basics.vi" Type="VI" URL="../Loop Basics.vi"/>
+		<Item Name="Loop Shift registers with API.vi" Type="VI" URL="../Loop Shift registers with API.vi"/>
+		<Item Name="Loop with Shift Registers.vi" Type="VI" URL="../Loop with Shift Registers.vi"/>
+		<Item Name="Loops with hardware API.vi" Type="VI" URL="../Loops with hardware API.vi"/>
 		<Item Name="Sample Vi.vi" Type="VI" URL="../Sample Vi.vi"/>
 		<Item Name="Straight Line Equation.vi" Type="VI" URL="../Straight Line Equation.vi"/>
 		<Item Name="Thermocouple" Type="NI-DAQmx Task">
