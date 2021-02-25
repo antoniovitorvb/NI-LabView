@@ -1,2 +1,0 @@
-19.408136 	 30.000000 	 20.000000 	 TRUE 	 Freeze Warning 
-19.645147 	 30.000000 	 20.000000 	 TRUE 	 Freeze Warning 
