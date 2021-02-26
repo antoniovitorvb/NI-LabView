@@ -10,20 +10,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="5.1 Average.vi" Type="VI" URL="../5.1 Average.vi"/>
-		<Item Name="5.1 Straight Line Equation.vi" Type="VI" URL="../5.1 Straight Line Equation.vi"/>
-		<Item Name="5.2 Sample Vi.vi" Type="VI" URL="../5.2 Sample Vi.vi"/>
-		<Item Name="5.3 Analyze and Visualize Data.vi" Type="VI" URL="../5.3 Analyze and Visualize Data.vi"/>
-		<Item Name="5.3 Deg2Fah.vi" Type="VI" URL="../5.3 Deg2Fah.vi"/>
-		<Item Name="5.4 Acquire Data Voltage.vi" Type="VI" URL="../5.4 Acquire Data Voltage.vi"/>
-		<Item Name="7.1 Loop basics.vi" Type="VI" URL="../7.1 Loop basics.vi"/>
-		<Item Name="7.2 Loop with Shift Registers.vi" Type="VI" URL="../7.2 Loop with Shift Registers.vi"/>
-		<Item Name="7.3 Loops with hardware API.vi" Type="VI" URL="../7.3 Loops with hardware API.vi"/>
-		<Item Name="7.4 Loop Shift registers with API.vi" Type="VI" URL="../7.4 Loop Shift registers with API.vi"/>
-		<Item Name="8.1 e 8.2 Groups of Data.vi" Type="VI" URL="../8.1 e 8.2 Groups of Data.vi"/>
-		<Item Name="8.3 Single-channel Acquisition Data Types.vi" Type="VI" URL="../8.3 Single-channel Acquisition Data Types.vi"/>
-		<Item Name="8.4 N-channel Acquisition Data Types.vi" Type="VI" URL="../8.4 N-channel Acquisition Data Types.vi"/>
-		<Item Name="9.1 Case Structures.vi" Type="VI" URL="../9.1 Case Structures.vi"/>
+		<Item Name="05.1 Average.vi" Type="VI" URL="../05.1 Average.vi"/>
+		<Item Name="05.1 Straight Line Equation.vi" Type="VI" URL="../05.1 Straight Line Equation.vi"/>
+		<Item Name="05.2 Sample Vi.vi" Type="VI" URL="../05.2 Sample Vi.vi"/>
+		<Item Name="05.3 Analyze and Visualize Data.vi" Type="VI" URL="../05.3 Analyze and Visualize Data.vi"/>
+		<Item Name="05.3 Deg2Fah.vi" Type="VI" URL="../05.3 Deg2Fah.vi"/>
+		<Item Name="05.4 Acquire Data Voltage.vi" Type="VI" URL="../05.4 Acquire Data Voltage.vi"/>
+		<Item Name="07.1 Loop basics.vi" Type="VI" URL="../07.1 Loop basics.vi"/>
+		<Item Name="07.2 Loop with Shift Registers.vi" Type="VI" URL="../07.2 Loop with Shift Registers.vi"/>
+		<Item Name="07.3 Loops with hardware API.vi" Type="VI" URL="../07.3 Loops with hardware API.vi"/>
+		<Item Name="07.4 Loop Shift registers with API.vi" Type="VI" URL="../07.4 Loop Shift registers with API.vi"/>
+		<Item Name="08.1 e 08.2 Groups of Data.vi" Type="VI" URL="../08.1 e 08.2 Groups of Data.vi"/>
+		<Item Name="08.3 Single-channel Acquisition Data Types.vi" Type="VI" URL="../08.3 Single-channel Acquisition Data Types.vi"/>
+		<Item Name="08.4 N-channel Acquisition Data Types.vi" Type="VI" URL="../08.4 N-channel Acquisition Data Types.vi"/>
+		<Item Name="09.1 Case Structures.vi" Type="VI" URL="../09.1 Case Structures.vi"/>
 		<Item Name="10.1 exercise.txt" Type="Document" URL="../10.1 exercise.txt"/>
 		<Item Name="10.1 Writing and reading Data to a file.vi" Type="VI" URL="../10.1 Writing and reading Data to a file.vi"/>
 		<Item Name="10.2 DAQmx exercise.txt" Type="Document" URL="../10.2 DAQmx exercise.txt"/>
