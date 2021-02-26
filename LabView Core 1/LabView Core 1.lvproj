@@ -10,7 +10,28 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Acquire Data Voltage.vi" Type="VI" URL="../Acquire Data Voltage.vi"/>
+		<Item Name="5.1 Average.vi" Type="VI" URL="../5.1 Average.vi"/>
+		<Item Name="5.1 Straight Line Equation.vi" Type="VI" URL="../5.1 Straight Line Equation.vi"/>
+		<Item Name="5.2 Sample Vi.vi" Type="VI" URL="../5.2 Sample Vi.vi"/>
+		<Item Name="5.3 Analyze and Visualize Data.vi" Type="VI" URL="../5.3 Analyze and Visualize Data.vi"/>
+		<Item Name="5.3 Deg2Fah.vi" Type="VI" URL="../5.3 Deg2Fah.vi"/>
+		<Item Name="5.4 Acquire Data Voltage.vi" Type="VI" URL="../5.4 Acquire Data Voltage.vi"/>
+		<Item Name="7.1 Loop basics.vi" Type="VI" URL="../7.1 Loop basics.vi"/>
+		<Item Name="7.2 Loop with Shift Registers.vi" Type="VI" URL="../7.2 Loop with Shift Registers.vi"/>
+		<Item Name="7.3 Loops with hardware API.vi" Type="VI" URL="../7.3 Loops with hardware API.vi"/>
+		<Item Name="7.4 Loop Shift registers with API.vi" Type="VI" URL="../7.4 Loop Shift registers with API.vi"/>
+		<Item Name="8.1 e 8.2 Groups of Data.vi" Type="VI" URL="../8.1 e 8.2 Groups of Data.vi"/>
+		<Item Name="8.3 Single-channel Acquisition Data Types.vi" Type="VI" URL="../8.3 Single-channel Acquisition Data Types.vi"/>
+		<Item Name="8.4 N-channel Acquisition Data Types.vi" Type="VI" URL="../8.4 N-channel Acquisition Data Types.vi"/>
+		<Item Name="9.1 Case Structures.vi" Type="VI" URL="../9.1 Case Structures.vi"/>
+		<Item Name="10.1 exercise.txt" Type="Document" URL="../10.1 exercise.txt"/>
+		<Item Name="10.1 Writing and reading Data to a file.vi" Type="VI" URL="../10.1 Writing and reading Data to a file.vi"/>
+		<Item Name="10.2 DAQmx exercise.txt" Type="Document" URL="../10.2 DAQmx exercise.txt"/>
+		<Item Name="10.2 exercise.txt" Type="Document" URL="../10.2 exercise.txt"/>
+		<Item Name="10.2 Low level writing and reading data to a file.vi" Type="VI" URL="../10.2 Low level writing and reading data to a file.vi"/>
+		<Item Name="10.2 Writing DAQmx Data to a File.vi" Type="VI" URL="../10.2 Writing DAQmx Data to a File.vi"/>
+		<Item Name="10.3 DAQmx exercise.txt" Type="Document" URL="../10.3 DAQmx exercise.txt"/>
+		<Item Name="10.3 Writing multichannel Data to a file.vi" Type="VI" URL="../10.3 Writing multichannel Data to a file.vi"/>
 		<Item Name="AI Voltage" Type="NI-DAQmx Task">
 			<Property Name="\0\AI.Max" Type="Str">5</Property>
 			<Property Name="\0\AI.MeasType" Type="Str">Voltage</Property>
@@ -29,15 +50,6 @@
 			<Property Name="SampQuant.SampPerChan" Type="Str">100</Property>
 			<Property Name="SampTimingType" Type="Str">Sample Clock</Property>
 		</Item>
-		<Item Name="Analyze and Visualize Data.vi" Type="VI" URL="../Analyze and Visualize Data.vi"/>
-		<Item Name="Average.vi" Type="VI" URL="../Average.vi"/>
-		<Item Name="Deg2Fah.vi" Type="VI" URL="../Deg2Fah.vi"/>
-		<Item Name="Loop Basics.vi" Type="VI" URL="../Loop Basics.vi"/>
-		<Item Name="Loop Shift registers with API.vi" Type="VI" URL="../Loop Shift registers with API.vi"/>
-		<Item Name="Loop with Shift Registers.vi" Type="VI" URL="../Loop with Shift Registers.vi"/>
-		<Item Name="Loops with hardware API.vi" Type="VI" URL="../Loops with hardware API.vi"/>
-		<Item Name="Sample Vi.vi" Type="VI" URL="../Sample Vi.vi"/>
-		<Item Name="Straight Line Equation.vi" Type="VI" URL="../Straight Line Equation.vi"/>
 		<Item Name="Thermocouple" Type="NI-DAQmx Task">
 			<Property Name="\0\AI.Max" Type="Str">50</Property>
 			<Property Name="\0\AI.MeasType" Type="Str">Temperature:Thermocouple</Property>
@@ -237,6 +249,11 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
