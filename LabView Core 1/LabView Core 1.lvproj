@@ -10,6 +10,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Support Files" Type="Folder">
+			<Item Name="12.1 Determine Warning (SubVI).vi" Type="VI" URL="../12.1 Determine Warning (SubVI).vi"/>
+			<Item Name="13.1 Log Warning (SubVI).vi" Type="VI" URL="../13.1 Log Warning (SubVI).vi"/>
+			<Item Name="13.1 Weather Data.ctl" Type="VI" URL="../13.1 Weather Data.ctl"/>
+		</Item>
+		<Item Name="Text Files" Type="Folder">
+			<Item Name="10.1 exercise.txt" Type="Document" URL="../10.1 exercise.txt"/>
+			<Item Name="10.2 DAQmx exercise.txt" Type="Document" URL="../10.2 DAQmx exercise.txt"/>
+			<Item Name="10.2 exercise.txt" Type="Document" URL="../10.2 exercise.txt"/>
+			<Item Name="10.3 DAQmx exercise.txt" Type="Document" URL="../10.3 DAQmx exercise.txt"/>
+			<Item Name="10.4 exercise.txt" Type="Document" URL="../10.4 exercise.txt"/>
+			<Item Name="10.5 Data exercise.txt" Type="Document" URL="../10.5 Data exercise.txt"/>
+			<Item Name="13.1 temperature warning.txt" Type="Document" URL="../13.1 temperature warning.txt"/>
+		</Item>
 		<Item Name="05.1 Average.vi" Type="VI" URL="../05.1 Average.vi"/>
 		<Item Name="05.1 Straight Line Equation.vi" Type="VI" URL="../05.1 Straight Line Equation.vi"/>
 		<Item Name="05.2 Sample Vi.vi" Type="VI" URL="../05.2 Sample Vi.vi"/>
@@ -24,18 +38,15 @@
 		<Item Name="08.3 Single-channel Acquisition Data Types.vi" Type="VI" URL="../08.3 Single-channel Acquisition Data Types.vi"/>
 		<Item Name="08.4 N-channel Acquisition Data Types.vi" Type="VI" URL="../08.4 N-channel Acquisition Data Types.vi"/>
 		<Item Name="09.1 Case Structures.vi" Type="VI" URL="../09.1 Case Structures.vi"/>
-		<Item Name="10.1 exercise.txt" Type="Document" URL="../10.1 exercise.txt"/>
 		<Item Name="10.1 Writing and reading Data to a file.vi" Type="VI" URL="../10.1 Writing and reading Data to a file.vi"/>
-		<Item Name="10.2 DAQmx exercise.txt" Type="Document" URL="../10.2 DAQmx exercise.txt"/>
-		<Item Name="10.2 exercise.txt" Type="Document" URL="../10.2 exercise.txt"/>
 		<Item Name="10.2 Low level writing and reading data to a file.vi" Type="VI" URL="../10.2 Low level writing and reading data to a file.vi"/>
 		<Item Name="10.2 Writing DAQmx Data to a File.vi" Type="VI" URL="../10.2 Writing DAQmx Data to a File.vi"/>
-		<Item Name="10.3 DAQmx exercise.txt" Type="Document" URL="../10.3 DAQmx exercise.txt"/>
 		<Item Name="10.3 Writing multichannel Data to a file.vi" Type="VI" URL="../10.3 Writing multichannel Data to a file.vi"/>
 		<Item Name="10.4 Create Files and Folders.vi" Type="VI" URL="../10.4 Create Files and Folders.vi"/>
-		<Item Name="10.4 exercise.txt" Type="Document" URL="../10.4 exercise.txt"/>
-		<Item Name="10.5 Data exercise.txt" Type="Document" URL="../10.5 Data exercise.txt"/>
 		<Item Name="10.5 Reading and Analyzing Data.vi" Type="VI" URL="../10.5 Reading and Analyzing Data.vi"/>
+		<Item Name="12.1 Understanding Clusters.vi" Type="VI" URL="../12.1 Understanding Clusters.vi"/>
+		<Item Name="12.2 Clusters to plot Data Graphs and Charts.vi" Type="VI" URL="../12.2 Clusters to plot Data Graphs and Charts.vi"/>
+		<Item Name="13.1 Propagate Data Types.vi" Type="VI" URL="../13.1 Propagate Data Types.vi"/>
 		<Item Name="AI Voltage" Type="NI-DAQmx Task">
 			<Property Name="\0\AI.Max" Type="Str">5</Property>
 			<Property Name="\0\AI.MeasType" Type="Str">Voltage</Property>
@@ -160,6 +171,7 @@
 				<Item Name="DAQmx Create Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/task.llb/DAQmx Create Task.vi"/>
 				<Item Name="DAQmx Create Virtual Channel.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Virtual Channel.vi"/>
 				<Item Name="DAQmx Fill In Error Info.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/DAQmx Fill In Error Info.vi"/>
+				<Item Name="DAQmx Is Task Done.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Is Task Done.vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL 1Chan NSamp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL 1Chan NSamp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D DBL NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D DBL NChan 1Samp).vi"/>
 				<Item Name="DAQmx Read (Analog 1D Wfm NChan 1Samp).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/read.llb/DAQmx Read (Analog 1D Wfm NChan 1Samp).vi"/>
