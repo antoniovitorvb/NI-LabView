@@ -12,6 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Support Files" Type="Folder">
 			<Item Name="12.1 Determine Warning (SubVI).vi" Type="VI" URL="../12.1 Determine Warning (SubVI).vi"/>
+			<Item Name="13.1 DAQmx Configuration Cluster.ctl" Type="VI" URL="../13.1 DAQmx Configuration Cluster.ctl"/>
 			<Item Name="13.1 Log Warning (SubVI).vi" Type="VI" URL="../13.1 Log Warning (SubVI).vi"/>
 			<Item Name="13.1 Weather Data.ctl" Type="VI" URL="../13.1 Weather Data.ctl"/>
 		</Item>
@@ -23,6 +24,7 @@
 			<Item Name="10.4 exercise.txt" Type="Document" URL="../10.4 exercise.txt"/>
 			<Item Name="10.5 Data exercise.txt" Type="Document" URL="../10.5 Data exercise.txt"/>
 			<Item Name="13.1 temperature warning.txt" Type="Document" URL="../13.1 temperature warning.txt"/>
+			<Item Name="14.1 Weather warning log.txt" Type="Document" URL="../14.1 Weather warning log.txt"/>
 		</Item>
 		<Item Name="05.1 Average.vi" Type="VI" URL="../05.1 Average.vi"/>
 		<Item Name="05.1 Straight Line Equation.vi" Type="VI" URL="../05.1 Straight Line Equation.vi"/>
@@ -47,6 +49,9 @@
 		<Item Name="12.1 Understanding Clusters.vi" Type="VI" URL="../12.1 Understanding Clusters.vi"/>
 		<Item Name="12.2 Clusters to plot Data Graphs and Charts.vi" Type="VI" URL="../12.2 Clusters to plot Data Graphs and Charts.vi"/>
 		<Item Name="13.1 Propagate Data Types.vi" Type="VI" URL="../13.1 Propagate Data Types.vi"/>
+		<Item Name="14.1 Begining State.ctl" Type="VI" URL="../14.1 Begining State.ctl"/>
+		<Item Name="14.1 State Programming.vi" Type="VI" URL="../14.1 State Programming.vi"/>
+		<Item Name="14.2 State Programming.vi" Type="VI" URL="../14.2 State Programming.vi"/>
 		<Item Name="AI Voltage" Type="NI-DAQmx Task">
 			<Property Name="\0\AI.Max" Type="Str">5</Property>
 			<Property Name="\0\AI.MeasType" Type="Str">Voltage</Property>
@@ -251,6 +256,7 @@
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
+				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
@@ -275,6 +281,7 @@
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="sub Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/miscellaneous.llb/sub Waveform Array To Dynamic.vi"/>
+				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
 				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
