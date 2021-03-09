@@ -52,13 +52,15 @@
 			<Item Name="03.2 State Machine Data.ctl" Type="VI" URL="../03.2 State Machine Data.ctl"/>
 			<Item Name="03.2 Analyze Threshold(SubVI).vi" Type="VI" URL="../03.2 Analyze Threshold(SubVI).vi"/>
 		</Item>
+		<Item Name="03.3 Queued Message Handler" Type="Folder" URL="../03.3 Queued Message Handler">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="02.1 Parallel Loops.vi" Type="VI" URL="../02.1 Parallel Loops.vi"/>
 		<Item Name="02.2 Tag channels.vi" Type="VI" URL="../02.2 Tag channels.vi"/>
 		<Item Name="02.3 Messenger Channel.vi" Type="VI" URL="../02.3 Messenger Channel.vi"/>
 		<Item Name="02.4 Transfering Data Through Queues.vi" Type="VI" URL="../02.4 Transfering Data Through Queues.vi"/>
 		<Item Name="03.1 Event-driven User Interface.vi" Type="VI" URL="../03.1 Event-driven User Interface.vi"/>
 		<Item Name="03.2 Event-driven State Machine.vi" Type="VI" URL="../03.2 Event-driven State Machine.vi"/>
-		<Item Name="03.3 Event-driven Message Implementation.vi" Type="VI" URL="../03.3 Event-driven Message Implementation.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
