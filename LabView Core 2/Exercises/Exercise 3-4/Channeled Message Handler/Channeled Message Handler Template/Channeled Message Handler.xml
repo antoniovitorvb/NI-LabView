@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<MetaData>
+	<ProjectTemplate>
+		<Title localize="yes">Channeled Message Handler</Title>
+		<Description localize="yes">Uses channels to facilitate multiple sections of code running in parallel and sending data between them.</Description>
+		<Filters localize="yes">Templates:Desktop</Filters>
+		<Keywords localize="yes">state;machine;channel;FIFO;queue;queued;event;handler;message</Keywords>
+		<LocationPath>Core/Channeled Message Handler</LocationPath>
+		<ProjectPath>Channeled Message Handler.lvproj</ProjectPath>
+		>
+		<ListboxImagePath>images/cmh_small.png</ListboxImagePath>
+		<DocumentationPath>documentation/Channeled Message Handler Documentation.html</DocumentationPath>
+		<CustomVIMode>None</CustomVIMode>
+		<SortPriority>400</SortPriority>
+		<LabelLocalizations>localization/CMH_Label Localization.vi</LabelLocalizations>
+	</ProjectTemplate>
+</MetaData>

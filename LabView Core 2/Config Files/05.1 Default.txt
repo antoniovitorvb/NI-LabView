@@ -1,0 +1,6 @@
+Analog Input	
+AI Channel	Multi_I-O/ai0
+Sample Rate	1000
+Samples per Channel	1000
+Analog Output	
+AO Channel	Multi_I-O/ao1
