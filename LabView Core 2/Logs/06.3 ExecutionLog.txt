@@ -1,0 +1,4 @@
+2021-03-18 19:51:45.631
+State:	Acquire
+AI Voltage Channel:	Multi_I-O/ai0
+Sample Rate (Hz):	1000.00

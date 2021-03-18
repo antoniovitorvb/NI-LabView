@@ -1,0 +1,32 @@
+10:58:24.651 AM 5/19/2020
+State:	Initialize
+-------------------------
+
+10:58:24.651 AM 5/19/2020
+State:	Wait for Event
+-------------------------
+
+10:58:26.021 AM 5/19/2020
+State:	Acquire
+AI Voltage Channel:	Undefined_PCI-6221/ai0:8
+Sample Rate:	1000.000
+Sample Rate (Hz):	100
+-------------------------
+
+Error -200220 occured here: 
+ DAQmx Create Channel (AI-Voltage-Basic).vi:1780001<append>
+<B>Device Specified: </B>Undefined_PCI-6221
+<B>Suggested Device(s): </B>PCI-6221
+
+<B>Task Name: </B>_unnamedTask<D> 
+ Explanation(s):  
+ Error -200220 occurred at DAQmx Create Channel (AI-Voltage-Basic).vi:1780001
+
+Possible reason(s):
+
+Device identifier is invalid.
+
+Device Specified: Undefined_PCI-6221
+Suggested Device(s): PCI-6221
+
+Task Name: _unnamedTask<D>

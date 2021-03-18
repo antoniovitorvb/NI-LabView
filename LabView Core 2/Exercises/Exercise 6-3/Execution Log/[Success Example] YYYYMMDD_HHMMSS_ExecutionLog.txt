@@ -1,0 +1,61 @@
+10:56:04.707 AM 5/19/2020
+State:	Initialize
+-------------------------
+
+10:56:04.707 AM 5/19/2020
+State:	Wait for Event
+-------------------------
+
+10:56:05.577 AM 5/19/2020
+State:	Acquire
+AI Voltage Channel:	PCI-6221/ai0, PCI-6221/ai2:3
+Sample Rate:	1000.000
+Sample Rate (Hz):	100
+-------------------------
+
+10:56:05.690 AM 5/19/2020
+State:	Analyze
+Threshold (rms):	1.000
+Threshold Exceeded?:	TRUE
+-------------------------
+
+10:56:05.691 AM 5/19/2020
+State:	Log
+Log Filepath:	D:\NI Project\Excersice\LVCore2\Lesson 5\Exercise 5-3\Execution Log\20200519_105605_MyData.txt
+-------------------------
+
+10:56:05.696 AM 5/19/2020
+State:	Update UI
+-------------------------
+
+10:56:05.700 AM 5/19/2020
+State:	Wait for Event
+-------------------------
+
+10:56:20.591 AM 5/19/2020
+State:	Update Stumulus
+AO Voltage Channel:	PCI-6221/ao1
+Stimulus Value:	TRUE
+-------------------------
+
+10:56:22.326 AM 5/19/2020
+State:	Wait for Event
+-------------------------
+
+10:56:27.753 AM 5/19/2020
+State:	Clear
+-------------------------
+
+10:56:27.753 AM 5/19/2020
+State:	Update UI
+-------------------------
+
+10:56:27.753 AM 5/19/2020
+State:	Wait for Event
+-------------------------
+
+10:56:28.641 AM 5/19/2020
+State:	Exit
+-------------------------
+
+Success!

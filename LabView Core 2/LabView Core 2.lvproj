@@ -77,6 +77,8 @@
 		<Item Name="05.1-2 Managing Initialization Files (.ini).vi" Type="VI" URL="../05.1-2 Managing Initialization Files (.ini).vi"/>
 		<Item Name="05.1-3 INI Files with Multiple Keys.vi" Type="VI" URL="../05.1-3 INI Files with Multiple Keys.vi"/>
 		<Item Name="05.1-4 Config File on Event-driven SM.vi" Type="VI" URL="../05.1-4 Config File on Event-driven SM.vi"/>
+		<Item Name="06.1 Injecting Errors.vi" Type="VI" URL="../06.1 Injecting Errors.vi"/>
+		<Item Name="06.2 Handle Specific Errors Immediately.vi" Type="VI" URL="../06.2 Handle Specific Errors Immediately.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
