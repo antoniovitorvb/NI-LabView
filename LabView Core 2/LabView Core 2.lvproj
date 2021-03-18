@@ -63,6 +63,14 @@
 			<Item Name="05.1-4 Read Config File (subVI).vi" Type="VI" URL="../Support Files/05.1-4 Read Config File (subVI).vi"/>
 			<Item Name="05.1 Hardware Settings.ctl" Type="VI" URL="../Support Files/05.1 Hardware Settings.ctl"/>
 		</Item>
+		<Item Name="Logs" Type="Folder">
+			<Item Name="03.2 Data Log.txt" Type="Document" URL="../Logs/03.2 Data Log.txt"/>
+			<Item Name="04.1 Data Log.txt" Type="Document" URL="../Logs/04.1 Data Log.txt"/>
+			<Item Name="04.2 Data Log.txt" Type="Document" URL="../Logs/04.2 Data Log.txt"/>
+			<Item Name="04.2 my_waveform.bmp" Type="Document" URL="../Logs/04.2 my_waveform.bmp"/>
+			<Item Name="06.3 Data Log.txt" Type="Document" URL="../Logs/06.3 Data Log.txt"/>
+			<Item Name="06.3 ExecutionLog.txt" Type="Document" URL="../Logs/06.3 ExecutionLog.txt"/>
+		</Item>
 		<Item Name="02.1 Parallel Loops.vi" Type="VI" URL="../02.1 Parallel Loops.vi"/>
 		<Item Name="02.2 Tag channels.vi" Type="VI" URL="../02.2 Tag channels.vi"/>
 		<Item Name="02.3 Messenger Channel.vi" Type="VI" URL="../02.3 Messenger Channel.vi"/>
@@ -79,6 +87,7 @@
 		<Item Name="05.1-4 Config File on Event-driven SM.vi" Type="VI" URL="../05.1-4 Config File on Event-driven SM.vi"/>
 		<Item Name="06.1 Injecting Errors.vi" Type="VI" URL="../06.1 Injecting Errors.vi"/>
 		<Item Name="06.2 Handle Specific Errors Immediately.vi" Type="VI" URL="../06.2 Handle Specific Errors Immediately.vi"/>
+		<Item Name="06.3 Create an Execution Log File.vi" Type="VI" URL="../06.3 Create an Execution Log File.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
