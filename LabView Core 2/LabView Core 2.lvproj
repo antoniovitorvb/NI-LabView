@@ -11,6 +11,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="03.3 Queued Message Handler" Type="Folder" URL="../03.3 Queued Message Handler">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Config Files" Type="Folder">
+			<Item Name="05.1-1 Default.txt" Type="Document" URL="../Config Files/05.1-1 Default.txt"/>
+			<Item Name="05.1-2 default.ini" Type="Document" URL="../Config Files/05.1-2 default.ini"/>
+			<Item Name="05.1-3 multiple keys default.ini" Type="Document" URL="../Config Files/05.1-3 multiple keys default.ini"/>
+		</Item>
 		<Item Name="Support Files" Type="Folder">
 			<Item Name="Voltage" Type="NI-DAQmx Task">
 				<Property Name="\0\AI.Max" Type="Str">10</Property>
@@ -53,9 +61,7 @@
 			<Item Name="03.2 State Machine Data.ctl" Type="VI" URL="../Support Files/03.2 State Machine Data.ctl"/>
 			<Item Name="03.2 States.ctl" Type="VI" URL="../Support Files/03.2 States.ctl"/>
 			<Item Name="05.1-4 Read Config File (subVI).vi" Type="VI" URL="../Support Files/05.1-4 Read Config File (subVI).vi"/>
-		</Item>
-		<Item Name="03.3 Queued Message Handler" Type="Folder" URL="../03.3 Queued Message Handler">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
+			<Item Name="05.1 Hardware Settings.ctl" Type="VI" URL="../Support Files/05.1 Hardware Settings.ctl"/>
 		</Item>
 		<Item Name="02.1 Parallel Loops.vi" Type="VI" URL="../02.1 Parallel Loops.vi"/>
 		<Item Name="02.2 Tag channels.vi" Type="VI" URL="../02.2 Tag channels.vi"/>
@@ -70,7 +76,6 @@
 		<Item Name="05.1 Writing Delimited Configuration Files.vi" Type="VI" URL="../05.1 Writing Delimited Configuration Files.vi"/>
 		<Item Name="05.1-2 Managing Initialization Files (.ini).vi" Type="VI" URL="../05.1-2 Managing Initialization Files (.ini).vi"/>
 		<Item Name="05.1-3 INI Files with Multiple Keys.vi" Type="VI" URL="../05.1-3 INI Files with Multiple Keys.vi"/>
-		<Item Name="Hardware Settings.ctl" Type="VI" URL="../Support Files/Hardware Settings.ctl"/>
 		<Item Name="05.1-4 Config File on Event-driven SM.vi" Type="VI" URL="../05.1-4 Config File on Event-driven SM.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
