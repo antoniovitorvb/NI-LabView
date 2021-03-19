@@ -38,10 +38,10 @@
 		<Item Name="Enqueue Message (Single).vi" Type="VI" URL="../Enqueue Message (Single).vi"/>
 		<Item Name="Enqueue Message (Array).vi" Type="VI" URL="../Enqueue Message (Array).vi"/>
 		<Item Name="All Message Queues.ctl" Type="VI" URL="../All Message Queues.ctl"/>
-		<Item Name="Message Cluster.ctl" Type="VI" URL="../Message Cluster.ctl"/>
+		<Item Name="Message Cluster.ctl" Type="VI" URL="../../../../Exercises/Exercise 3-3/Producer Consumer (Events)/support/Message Queue/Message Cluster.ctl"/>
 	</Item>
 	<Item Name="Create All Message Queues.vi" Type="VI" URL="../Create All Message Queues.vi"/>
 	<Item Name="Obtain Message Queue.vi" Type="VI" URL="../Obtain Message Queue.vi"/>
-	<Item Name="Enqueue Message.vi" Type="VI" URL="../Enqueue Message.vi"/>
-	<Item Name="Dequeue Message.vi" Type="VI" URL="../Dequeue Message.vi"/>
+	<Item Name="Enqueue Message.vi" Type="VI" URL="../../../../Exercises/Exercise 3-4/Solution/support/Message Queue/Enqueue Message.vi"/>
+	<Item Name="Dequeue Message.vi" Type="VI" URL="../../../../Exercises/Exercise 3-4/Solution/support/Message Queue/Dequeue Message.vi"/>
 </Library>
