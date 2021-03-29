@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="FAB0741D2B1083C605C6E6CEC201EC1E" Timestamp="1D3751501E124E6" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="17.5.0.49152" FeatureSetName="DAQmx" Name="http://www.ni.com/DAQmx" OldestCompatibleVersion="1.0.0.0" Version="1.1.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;p&gt;This example demonstrates how to generate digital output data using software timing.&lt;/p&gt;\n\n&lt;p&gt;For instructions on how to connect your signals from &amp;nbsp;the DAQ device, refer to your device documentation.&lt;/p&gt;"</p.UserDescription>
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<Path Data="[PathGeometry]M 39,36 C 39,37.6500015 37.6500015,39 36,39 L 4,39 C 2.3499999,39 1,37.6500015 1,36 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 36,1 C 37.6500015,1 39,2.3499999 39,4 L 39,36 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Id="136" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+				<Path Data="[PathGeometry]M 36,1 C 37.6539993,1 39,2.34599996 39,4 L 39,36 C 39,37.6539993 37.6539993,39 36,39 L 4,39 C 2.34599996,39 1,37.6539993 1,36 L 1,4 C 1,2.34599996 2.34599996,1 4,1 L 36,1 M 36,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,36 C 0,38.2000008 1.79999995,40 4,40 L 36,40 C 38.2000008,40 40,38.2000008 40,36 L 40,4 C 40,1.79999995 38.2000008,0 36,0 L 36,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Id="137" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+				<Path Data="[PathGeometry]M 38,36 C 38,37.0999985 37.0999985,38 36,38 L 4,38 C 2.9000001,38 2,37.0999985 2,36 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 36,2 C 37.0999985,2 38,2.9000001 38,4 L 38,36 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Id="138" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+				<Path Data="[PathGeometry]M 30.1270008,18.5489998 C 31.2910004,19.2229996 31.2910004,20.3260002 30.1270008,21 L 11.1169996,31.7119999 C 9.95300007,32.3860016 9,31.8369999 9,30.4909992 L 9,9.50899982 C 9,8.16399956 9.95300007,7.61399984 11.1169996,8.28800011 L 30.1270008,18.5489998 Z M 21,19 L 17,19 L 17,15 L 15,15 L 15,19 L 11,19 L 11,21 L 15,21 L 15,25 L 17,25 L 17,21 L 21,21 L 21,19 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Id="139" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+				<Path Data="[PathGeometry]M 38,10 L 38,19 L 35.9080009,19 C 35.7010002,18.4190006 35.1520004,18 34.5,18 C 33.6720009,18 33,18.6720009 33,19.5 C 33,20.3279991 33.6720009,21 34.5,21 C 35.1520004,21 35.7019997,20.5809994 35.9080009,20 L 38,20 L 38,30 L 16.1919994,30 L 30.618,21.8710003 C 31.5,21.3610001 32,20.5979996 32,19.7740002 C 32,18.9500008 31.5,18.1879997 30.6280003,17.6830006 L 16.3929996,10 L 38,10 Z M 2,10 L 2,14 L 4.09200001,14 C 4.29899979,13.4189997 4.84800005,13 5.5,13 C 6.32800007,13 7,13.6719999 7,14.5 C 7,15.3280001 6.32800007,16 5.5,16 C 4.84800005,16 4.29799986,15.5810003 4.09200001,15 L 2,15 L 2,25 L 4.09200001,25 C 4.29899979,24.4190006 4.84800005,24 5.5,24 C 6.32800007,24 7,24.6720009 7,25.5 C 7,26.3279991 6.32800007,27 5.5,27 C 4.84800005,27 4.29799986,26.5809994 4.09200001,26 L 2,26 L 2,30 L 8,30 L 8,10 L 2,10 Z" Fill="[SMSolidColorBrush]#ff62839d" Height="[float]40" Id="140" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="50" Id="11" ListViewHeight="30" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="0 45" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="50 5" />
+			<ConnectorPaneTerminal Hotspot="50 15" />
+			<ConnectorPaneTerminal Hotspot="50 25" />
+			<ConnectorPaneTerminal Hotspot="50 35" />
+			<ConnectorPaneTerminal Hotspot="50 45" />
+			<ConnectorPaneTerminal Hotspot="15 50" />
+			<ConnectorPaneTerminal Hotspot="25 50" />
+			<ConnectorPaneTerminal Hotspot="35 50" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="12" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="13" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
+		<BlockDiagram Id="14">
+			<Wire Id="29" Joints="N(212:Value)|(125,405) h(20) v(-50) N(272:L2)|(155,355)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DAQmxNode Bounds="505 330 50 50" DomainName="NI:DAQmx:Internal" Id="36" ResolveFailedHint="DAQmx Start Task.gvi, Package: (NI-DAQmx API support for LabVIEW NXG 2.0, Version: 17.5.0)" Target="NI:DAQmx:Internal:DAQmx\ Start\ Task\.gvi" xmlns="http://www.ni.com/DAQmx">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="task in" />
+						<Parameter Id="L1" Desc="error in" />
+						<Parameter Id="R0" Desc="task out" />
+						<Parameter Id="R1" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</DAQmxNode>
+			<Comment Bounds="120 475 110 15" Id="39" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Channel Settings</p.Text>
+			</Comment>
+			<WhileLoop Bounds="580 265 455 175" DiagramId="41" Id="40">
+				<LoopIteration Bounds="10 140 15 15" Id="42" />
+				<LoopCondition Bounds="415 125 15 15" Id="43" />
+				<Write Bounds="195 60 50 50" DomainName="NI:DAQmx:Internal" Id="48" Instance="WriteDigital1Chan1Samp1DBool" ResolveFailedHint="DAQmx Write (Digital 1D Bool 1Chan 1Samp).gvi, Package: (NI-DAQmx API support for LabVIEW NXG 2.0, Version: 17.5.0)" Target="NI:DAQmx:Internal:DAQmx\ Write\ \(Digital\ 1D\ Bool\ 1Chan\ 1Samp\)\.gvi" xmlns="http://www.ni.com/DAQmx">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="task in" />
+							<Parameter Id="L1" Desc="error in" />
+							<Parameter Id="L2" Desc="data" />
+							<Parameter Id="L4" Desc="timeout" />
+							<Parameter Id="T0" Desc="auto start" />
+							<Parameter Id="R0" Desc="task out" />
+							<Parameter Id="R1" Desc="error out" />
+							<Parameter Id="R3" Desc="number of samples written per channel" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Double" Direction="Input" Hotspot="0 45" Id="L4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+				</Write>
+				<Wire Id="49" Joints="N(45:i0)|(4,75) N(48:L1)|(195,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="50" Joints="N(47:i0)|(4,65) N(48:L0)|(195,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wait Bounds="400 15 40 40" Id="58" />
+				<Wire Id="64" Joints="N(206:Value)|(340,35) N(58:time to wait)|(400,35)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="65" Joints="N(48:R0)|(245,65) N(66:i0)|(441,65)" xmlns="http://www.ni.com/PlatformFramework" />
+				<PropertyNode Bounds="280 70 68 35" HasErrorTerminals="False" Id="67" InstanceDataType="Error" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/MocCommon">
+					<PropertyItemTerminal DataType="Boolean" Hotspot="68 15" Id="c0t0v" Path="status" PathElementMemberKinds="Field" Usage="Optional" />
+				</PropertyNode>
+				<Wire Id="68" Joints="N(48:R1)|(245,75) N(67:instance in)|(280,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="70" Joints="N(67:c0t0v)|(348,85) h(12) v(40) N(71:c0t0v)|(372,125)" xmlns="http://www.ni.com/PlatformFramework" />
+				<LogicalOr Bounds="370 120 25 20" Id="71" Terminals="o=78, c0t0v=70, c1t0v=77" />
+				<Wire Id="77" Joints="N(210:Value)|(350,135) N(71:c1t0v)|(372,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="78" Joints="N(71:o)|(395,130) N(43:Input)|(415,130)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="80" Joints="N(67:instance out)|(348,75) N(81:i0)|(441,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				<DataAccessor Bounds="300 30 40 15" DataItem="196" Id="206" Label="207" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="206" Bounds="300 13 86 14" Id="207" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Loop Rate (ms)</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="310 130 40 15" DataItem="198" Id="210" Label="211" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="210" Bounds="279 130 26 14" Id="211" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Stop</p.Text>
+				</NodeLabel>
+				<DataAccessor Bounds="90 95 40 15" DataItem="262" Id="266" Label="267" xmlns="http://www.ni.com/MocCommon">
+					<Terminal DataType="Boolean[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				</DataAccessor>
+				<NodeLabel AttachedTo="266" Bounds="11 95 74 14" Id="267" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Data to Write</p.Text>
+				</NodeLabel>
+				<ArraySubset Bounds="135 95 40 40" Id="294" Terminals="array=301, subarray=300, index0, length0=297" />
+				<Wire Id="297" Joints="N(296:i0)|(4,130) N(294:length0)|(135,130)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="300" Joints="N(294:subarray)|(175,100) h(10) v(-15) N(48:L2)|(195,85)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="301" Joints="N(266:Value)|(130,100) N(294:array)|(135,100)" xmlns="http://www.ni.com/PlatformFramework" />
+				<LoopTunnel Bounds="-4 75 13 10" Docking="Left" Id="45" Terminals="o0=44, i0=49" />
+				<LoopTunnel Bounds="-4 65 13 10" Docking="Left" Id="47" Terminals="o0=46, i0=50" />
+				<LoopTunnel Bounds="446 65 13 10" Docking="Right" Id="66" Terminals="o0=84, i0=65" />
+				<LoopTunnel Bounds="446 75 13 10" Docking="Right" Id="81" Terminals="o0=83, i0=80" />
+				<LoopTunnel Bounds="-4 130 13 10" Docking="Left" Id="296" Terminals="o0=295, i0=297" />
+			</WhileLoop>
+			<Wire Id="44" Joints="N(36:R1)|(555,345) N(45:o0)|(576,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="46" Joints="N(36:R0)|(555,335) N(47:o0)|(576,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Comment Bounds="745 475 145 15" Id="79" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Generate Digital Signal</p.Text>
+			</Comment>
+			<DAQmxNode Bounds="1075 330 50 50" DomainName="NI:DAQmx:Internal" Id="82" ResolveFailedHint="DAQmx Stop Task.gvi, Package: (NI-DAQmx API support for LabVIEW NXG 2.0, Version: 17.5.0)" Target="NI:DAQmx:Internal:DAQmx\ Stop\ Task\.gvi" xmlns="http://www.ni.com/DAQmx">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="task in" />
+						<Parameter Id="L1" Desc="error in" />
+						<Parameter Id="R0" Desc="task out" />
+						<Parameter Id="R1" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</DAQmxNode>
+			<Wire Id="83" Joints="N(81:o0)|(1039,345) N(82:L1)|(1075,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="84" Joints="N(66:o0)|(1039,335) N(82:L0)|(1075,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DAQmxNode Bounds="1165 330 50 50" DomainName="NI:DAQmx:Internal" Id="85" ResolveFailedHint="DAQmx Clear Task.gvi, Package: (NI-DAQmx API support for LabVIEW NXG 2.0, Version: 17.5.0)" Target="NI:DAQmx:Internal:DAQmx\ Clear\ Task\.gvi" xmlns="http://www.ni.com/DAQmx">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="task in" />
+						<Parameter Id="L1" Desc="error in" />
+						<Parameter Id="R1" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</DAQmxNode>
+			<Wire Id="86" Joints="N(82:R0)|(1125,335) N(85:L0)|(1165,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="87" Joints="N(82:R1)|(1125,345) N(85:L1)|(1165,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="1275 340 40 40" DomainName="NI:G Core:Error" Id="88" ResolveFailedHint="Display Error.gvi, Package: (LabVIEW NXG G Standard Library Files, Version: 2.0.0)" Target="NI:G\ Core:Error:Display\ Error\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="type of dialog" />
+						<Parameter Id="L0" Desc="error in" />
+						<Parameter Id="R0" Desc="error?" />
+						<Parameter Id="R1" Desc="code" />
+						<Parameter Id="R2" Desc="location" />
+						<Parameter Id="R3" Desc="description" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Error" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@f5a5cf354bdb4f3db8f1bbd70322eefa" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="96" Joints="N(85:R1)|(1215,345) N(88:L0)|(1275,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="98" Joints="N(303:Out)|(1255,405) h(10) v(-50) N(88:L1)|(1275,355)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DAQmxNode Bounds="70 330 50 50" DomainName="NI:DAQmx:Internal" Id="132" ResolveFailedHint="DAQmx Create Task.gvi, Package: (NI-DAQmx API support for LabVIEW NXG 2.0, Version: 17.5.0)" Target="NI:DAQmx:Internal:DAQmx\ Create\ Task\.gvi" xmlns="http://www.ni.com/DAQmx">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="error in" />
+						<Parameter Id="L2" Desc="task to copy" />
+						<Parameter Id="L3" Desc="global virtual channels" />
+						<Parameter Id="T0" Desc="new task name" />
+						<Parameter Id="T1" Desc="auto cleanup" />
+						<Parameter Id="R0" Desc="task out" />
+						<Parameter Id="R1" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:Tag|NI:DAQmx:Types\.udr:Channel|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</DAQmxNode>
+			<Wire Id="133" Joints="N(132:R0)|(120,335) N(272:L0)|(155,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="134" Joints="N(132:R1)|(120,345) N(272:L1)|(155,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="85 400 40 15" DataItem="199" Id="212" Label="213" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType=":UDR:Tag|NI:DAQmx:Types\.udr:Physical\ Channel|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="212" Bounds="85 418 93 14" Id="213" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Physical Channel</p.Text>
+			</NodeLabel>
+			<CreateChannel Bounds="155 330 50 50" DomainName="NI:DAQmx:Internal" Id="272" Instance="CreateChannelDODigitalOutput" ResolveFailedHint="DAQmx Create Channel (DO-Digital Output).gvi, Package: (NI-DAQmx API support for LabVIEW NXG 2.0, Version: 17.5.0)" Target="NI:DAQmx:Internal:DAQmx\ Create\ Channel\ \(DO\-Digital\ Output\)\.gvi" xmlns="http://www.ni.com/DAQmx">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="task in" />
+						<Parameter Id="L1" Desc="error in" />
+						<Parameter Id="L2" Desc="lines" />
+						<Parameter Id="L3" Desc="name to assign" />
+						<Parameter Id="L4" Desc="line grouping" />
+						<Parameter Id="R0" Desc="task out" />
+						<Parameter Id="R1" Desc="error out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:Tag|NI:DAQmx:Types\.udr:Physical\ Channel|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Error" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</CreateChannel>
+			<PropertyNode Bounds="220 330 275 60" Filter="Write" Id="278" InstanceDataType=":UDR:TagRefnum|NI:DAQmx:Types\.udr:Task|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" ListViewAutoSize="False" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/MocCommon">
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="NI:DAQmx:Types\.udr:Task" />
+				</p.TypeDefinitionTargets>
+				<PropertyItemTerminal DataType="UInt32" Hotspot="275 40" Id="c0t0v" Path="DO_NumBooleansPerChan_217F" PathElementMemberKinds="Field" Usage="Optional" />
+			</PropertyNode>
+			<Wire Id="290" Joints="N(272:R1)|(205,345) N(278:error in)|(220,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="291" Joints="N(278:error out)|(495,345) N(36:L1)|(505,345)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="292" Joints="N(272:R0)|(205,335) N(278:instance in)|(220,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="293" Joints="N(278:instance out)|(495,335) N(36:L0)|(505,335)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="295" Joints="N(278:c0t0v)|(495,370) h(5) v(30) N(296:o0)|(576,400)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="1075 400 180 15" DataType="@f5a5cf354bdb4f3db8f1bbd70322eefa" Id="303" p4:ControlDefinitionChecksum="j7CQRFW5npEMI2NYftdX6g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>3</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\ Dialog\ Type\.gtype" />
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\ Dialog\ Type\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumBehavior />
+			</Literal>
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" Id="15" Left="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<Rectangle Fill="[SMSolidColorBrush]#ff055aae" Height="[float]72" Id="141" Left="[float]64" MinHeight="[float]1" MinWidth="[float]1" Opacity="[float]1" RadiusX="[float]10" RadiusY="[float]10" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]30" Width="[float]677" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Foreground="[SMColor]#ffffffff" Height="[float]29" Id="142" Left="[float]274" Text="[string]On Demand Digital Output" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]254" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontSize="16" Id="143" />
+			</Text>
+			<Text Foreground="[SMColor]#ffffffff" Height="[float]16" Id="144" Left="[float]264" Text="[string]Demonstrates on demand generation of digital data" TextWrapping="[TextWrapping]Wrap" Top="[float]58" Width="[float]276" xmlns="http://www.ni.com/PlatformFramework" />
+			<Rectangle Fill="[SMSolidColorBrush]#ffeaeaea" Height="[float]283" Id="145" Left="[float]64" MinHeight="[float]1" MinWidth="[float]1" Opacity="[float]1" RadiusX="[float]10" RadiusY="[float]10" Stroke="[SMSolidColorBrush]#ff0559ae" StrokeThickness="[float]1" Top="[float]74" Width="[float]677" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Foreground="[SMColor]#ff4d5259" Height="[float]25" Id="146" Left="[float]89" Text="[string]Channel Settings" TextWrapping="[TextWrapping]Wrap" Top="[float]93" Width="[float]139" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontSize="14" Id="147" />
+			</Text>
+			<Text Foreground="[SMColor]#ff4d5259" Height="[float]25" Id="148" Left="[float]470" Text="[string]Signal to Generate" TextWrapping="[TextWrapping]Wrap" Top="[float]93" Width="[float]153" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontSize="14" Id="149" />
+			</Text>
+			<NumericText BaseName="[string]Numeric" Enabled="[bool]True" Height="[float]24" Id="150" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" Label="[UIModel]182" Left="[float]106" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" TabIndex="[int]0" Top="[float]258" Value="{DataItemBinding Id=196}" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Button BaseName="[string]Stop" Content="[string]Stop" Enabled="[bool]True" Foreground="[SMColor]#ffff0000" Height="[float]24" Id="152" IncludeInCapture="[bool]False" IsMomentary="[bool]False" Label="[UIModel]184" Left="[float]638" MinHeight="[float]13" MinWidth="[float]13" Shape="[ButtonShape]Square" TabIndex="[int]1" Top="[float]323" Value="{DataItemBinding Id=198}" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<IONameControl AllowUndefinedValues="[bool]True" BaseName="[string]Name" DataType="[Type]:UDR:Tag|NI:DAQmx:Types\.udr:Physical\ Channel|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Enabled="[bool]True" Height="[float]24" Id="153" Label="[UIModel]185" Left="[float]110" MinHeight="[float]24" MultipleSelectionMode="[MultipleSelectionModes]List, Range" SelectedResource="{DataItemBinding Id=199}" TabIndex="[int]2" Top="[float]149" UdrClass="[string]Physical Channel" UdrNamespace="[string]Types.udr" Width="[float]196" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+					<TypeDefinitionTarget TargetName="NI:DAQmx:Types\.udr:physical\ channel:ControlDefinition" />
+				</p.TypeDefinitionTargets>
+				<InstanceDataEntry Id="154" Key="ChangeNumber" Value="[uint]0" xmlns="http://www.ni.com/MocCommon" />
+				<InstanceDataEntry Id="302" Key="PhysicalChannelType" Value="[int]8" xmlns="http://www.ni.com/MocCommon" />
+			</IONameControl>
+			<Text Foreground="[SMColor]#ff4d5259" Height="[float]25" Id="155" Left="[float]89" Text="[string]Timing Settings" TextWrapping="[TextWrapping]Wrap" Top="[float]201" Width="[float]128" xmlns="http://www.ni.com/PlatformFramework">
+				<FontSetting FontSize="14" Id="156" />
+			</Text>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="182" LabelOwner="[UIModel]150" Left="[float]106" Text="[string]Loop Rate (ms)" Top="[float]238" Width="[float]80" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Foreground="[SMColor]#ff2b3033" Id="184" LabelOwner="[UIModel]152" Left="[float]638" Text="[string]Stop" Top="[float]303" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="185" LabelOwner="[UIModel]153" Left="[float]110" Text="[string]Physical Channel" Top="[float]129" Width="[float]89" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]264" BaseName="[string]Array" Columns="[int]8" Dimensions="[int]1" Enabled="[bool]True" FixedSize="[ArrayElementIndex]9" Height="[float]68" HorizontalScrollBarVisibility="[ScrollBarVisibility]Visible" Id="263" IndexVisibility="[Visibility]Collapsed" IsFixedSize="[bool]False" Label="[UIModel]268" Left="[float]382" Orientation="[SMOrientation]Horizontal" Rows="[int]1" TabIndex="[int]3" Top="[float]149" Value="{DataItemBinding Id=262}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]328" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>False</p.DefaultElementValue>
+				<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]36" Id="264" IsReadOnly="[bool]False" MinHeight="[float]16" MinWidth="[float]16" Name="[string]Child" Shape="[LEDShape]Round" TrueContent="[string]On" Width="[float]36" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Label Foreground="[SMColor]#ff2b3033" Height="[float]16" Id="268" LabelOwner="[UIModel]263" Left="[float]382" Text="[string]Data to Write" Top="[float]129" Visible="[bool]False" Width="[float]71" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Foreground="[SMColor]#ff4d5359" Height="[float]16" Id="270" Left="[float]397" MinHeight="[float]11" MinWidth="[float]11" Text="[string]LSB" TextWrapping="[TextWrapping]Wrap" Top="[float]129" Width="[float]19" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Foreground="[SMColor]#ff2b3033" Height="[float]59" Id="277" Left="[float]382" MinHeight="[float]11" MinWidth="[float]11" SizeMode="[TextModelSizeMode]Fixed" Text="[string]The number of enabled elements in the boolean array should equal number of lines in channel." TextWrapping="[TextWrapping]Wrap" Top="[float]233" Width="[float]328" xmlns="http://www.ni.com/PlatformFramework" />
+			<PanelExecutionWindow Id="304" />
+		</NativeFrontPanel>
+		<DataItem DataType="UInt32" Id="196" Name="Loop Rate (ms)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>100</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="198" IsLatched="True" Name="Stop" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType=":UDR:Tag|NI:DAQmx:Types\.udr:Physical\ Channel|niaggregate://path/ref:%2F%2FNI%2FDAQmx%2Fapi-src%2F17.5.0/file:%2F%2FDAQmx.gcomp%5CDAQmx.gcomp/file:%2F%2FTypes.udr" Id="199" Name="Physical Channel" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>cDAQ1Mod3/port0/line0:7</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:DAQmx:Types\.udr:physical\ channel" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" DataType="Boolean[]" Id="262" Name="Data to Write" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Array Lengths="8" IsBinary="True" Compression="GZip">
+					<BinaryElements>H4sIAAAAAAAEAGNgZGBg+A8EIBoEBEAMDhBmxI64AYECs4UzAAAA</BinaryElements>
+				</Array>
+			</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="f5a5cf354bdb4f3db8f1bbd70322eefa">
+			<Attributed AttributedType="@5a0b83b50bd842469a8f9ec749b3a30f">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Error" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="5a0b83b50bd842469a8f9ec749b3a30f">
+			<Typedef TypedefName="Error Dialog Type.gtype" UnderlyingType="@aed0e95ad3fd4ea08e7376092a7f6db7" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="aed0e95ad3fd4ea08e7376092a7f6db7">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="no dialog" />
+					<EnumerationMember Value="1" Name="OK message" />
+					<EnumerationMember Value="2" Name="continue or stop message" />
+					<EnumerationMember Value="3" Name="OK message + warnings" />
+					<EnumerationMember Value="4" Name="continue/stop + warnings" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="NI:DAQmx:Internal:DAQmx\ Start\ Task\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DAQmx Start Task" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+									<FontSetting FontFamily="Verdana" FontSize="9" />
+								</FileNameText>
+							</IconTemplate>
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1 M 46,0 L 4.08300018,0 C 1.88300002,0 0,1.74699998 0,3.94700003 L 0,46 C 0,48.2000008 1.88300002,50 4.08300018,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,3.94700003 C 50,1.74699998 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 48,46.0530014 C 48,47.1529999 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.1529999 2,46.0530014 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46.0530014 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 14.1499996,5.63100004 C 13.9200001,5.21500015 13.6040001,4.88500023 13.2030001,4.64099979 C 12.9689999,4.49499989 12.6800003,4.3829999 12.3360004,4.30299997 C 11.9919996,4.22300005 11.5839996,4.18400002 11.1090002,4.18400002 L 9,4.18400002 L 9,10 L 11.0509996,10 C 11.5139999,10 11.9160004,9.9659996 12.2539997,9.89799976 C 12.592,9.82999992 12.9040003,9.71000004 13.1879997,9.53899956 C 13.5649996,9.31000042 13.8780003,8.98099995 14.1260004,8.55300045 C 14.3739996,8.125 14.4969997,7.63899994 14.4969997,7.09800005 C 14.4960003,6.53499985 14.3809996,6.046 14.1499996,5.63100004 Z M 12.7539997,8.05700016 C 12.6269999,8.31900024 12.4259996,8.52799988 12.1520004,8.68400002 C 11.993,8.77000046 11.8299999,8.82900047 11.6639996,8.86200047 C 11.4980001,8.89500046 11.2360001,8.90999985 10.8789997,8.90999985 L 10.5,8.90999985 L 10.5,5.26999998 L 10.8789997,5.26999998 C 11.2019997,5.26999998 11.4429998,5.28399992 11.6040001,5.31099987 C 11.7650003,5.33799982 11.9209995,5.38999987 12.0749998,5.46500015 C 12.3769999,5.61899996 12.5979996,5.83199978 12.7370005,6.10400009 C 12.8760004,6.37599993 12.9460001,6.704 12.9460001,7.08599997 C 12.9449997,7.47100019 12.8809996,7.79500008 12.7539997,8.05700016 Z M 18.5960007,4.18400002 L 16.8700008,4.18400002 L 14.7209997,10 L 16.2329998,10 L 16.6380005,8.82400036 L 18.7900009,8.82400036 L 19.1959991,10 L 20.7450008,10 L 18.5960007,4.18400002 Z M 16.9990005,7.7579999 L 17.7150002,5.67399979 L 18.4300003,7.7579999 L 16.9990005,7.7579999 Z M 26.5219994,8.88099957 C 26.8349991,8.38000011 26.9909992,7.78399992 26.9909992,7.09399986 C 26.9909992,6.15899992 26.7240009,5.42000008 26.1900005,4.87699986 C 25.6560001,4.33400011 24.9230003,4.0630002 23.9909992,4.0630002 C 23.0559998,4.0630002 22.323,4.33400011 21.7919998,4.87699986 C 21.2609997,5.42000008 20.9950008,6.15899992 20.9950008,7.09399986 C 20.9950008,7.98699999 21.2380009,8.69999981 21.7240009,9.2329998 C 22.2099991,9.76599979 22.8880005,10.0570002 23.757,10.1059999 C 23.7700005,10.335 23.8139992,10.5439997 23.8899994,10.7309999 C 23.9659996,10.9180002 24.0790005,11.0810003 24.2299995,11.2189999 C 24.3840008,11.3599997 24.5760002,11.4689999 24.8059998,11.5450001 C 25.0359993,11.6210003 25.3059998,11.6599998 25.6170006,11.6599998 C 25.9689999,11.6599998 26.2299995,11.6470003 26.3999996,11.6210003 C 26.5699997,11.5950003 26.7290001,11.5649996 26.875,11.5319996 L 26.875,10.5039997 L 26.7269993,10.5039997 C 26.6700001,10.533 26.5680008,10.5649996 26.4220009,10.6020002 C 26.2759991,10.6389999 26.1499996,10.6569996 26.0429993,10.6569996 C 25.7280006,10.6569996 25.5049992,10.6009998 25.375,10.4879999 C 25.2450008,10.3760004 25.1739998,10.1899996 25.1639996,9.93000031 C 25.757,9.73200035 26.2099991,9.38199997 26.5219994,8.88099957 Z M 24.5459995,8.9119997 C 24.3719997,8.98600006 24.1879997,9.02299976 23.9950008,9.02299976 C 23.802,9.02299976 23.6189995,8.98600006 23.4440002,8.91399956 C 23.2689991,8.84200001 23.1170006,8.72799969 22.9869995,8.57400036 C 22.8570004,8.42000008 22.7520008,8.22200012 22.6730003,7.97800016 C 22.5939999,7.73400021 22.5540009,7.43900013 22.5540009,7.09299994 C 22.5540009,6.75500011 22.5949993,6.45699978 22.677,6.19999981 C 22.7590008,5.94299984 22.8649998,5.7420001 22.9950008,5.59600019 C 23.1359997,5.44000006 23.2900009,5.32800007 23.4580002,5.26000023 C 23.6259995,5.19199991 23.8050003,5.15799999 23.9950008,5.15799999 C 24.1830006,5.15799999 24.3630009,5.19299984 24.5359993,5.26300001 C 24.7089996,5.33300018 24.8619995,5.44700003 24.9950008,5.60300016 C 25.125,5.75400019 25.2310009,5.95200014 25.3110008,6.19700003 C 25.3910007,6.44199991 25.4319992,6.73899984 25.4319992,7.08799982 C 25.4319992,7.41400003 25.3969994,7.69700003 25.3269997,7.9380002 C 25.257,8.1789999 25.1490002,8.38799953 25.0030003,8.56499958 C 24.8729992,8.72299957 24.7199993,8.8380003 24.5459995,8.9119997 Z M 32.7070007,6.68900013 C 32.8190002,6.64799976 32.9339981,6.62799978 33.0509987,6.62799978 C 33.2249985,6.62799978 33.3610001,6.64900017 33.4570007,6.69199991 C 33.5530014,6.73500013 33.6240005,6.80299997 33.6679993,6.89699984 C 33.7150002,6.99100018 33.743,7.11199999 33.7519989,7.26000023 C 33.7610016,7.40799999 33.7659988,7.59100008 33.7659988,7.80700016 L 33.7659988,10 L 35.1759987,10 L 35.1759987,7.14499998 C 35.1759987,6.61100006 35.0530014,6.20200014 34.8069992,5.91800022 C 34.5610008,5.63399982 34.2019997,5.4920001 33.7280006,5.4920001 C 33.4729996,5.4920001 33.2130013,5.55999994 32.9480019,5.69500017 C 32.6829987,5.82999992 32.4099998,6.0170002 32.1290016,6.25400019 C 32.0040016,6.00400019 31.8309994,5.81500006 31.6100006,5.68599987 C 31.3889999,5.55700016 31.1340008,5.49300003 30.8449993,5.49300003 C 30.5769997,5.49300003 30.3330002,5.546 30.1119995,5.65299988 C 29.8910007,5.76000023 29.6590004,5.90799999 29.4179993,6.09800005 L 29.4179993,5.61299992 L 28.0079994,5.61299992 L 28.0079994,10 L 29.4179993,10 L 29.4179993,6.89099979 C 29.5219994,6.82800007 29.6389999,6.76900005 29.7700005,6.71299982 C 29.9009991,6.65700006 30.0340004,6.62900019 30.1720009,6.62900019 C 30.3439999,6.62900019 30.4769993,6.6500001 30.5720005,6.69299984 C 30.6669998,6.73600006 30.7380009,6.8039999 30.7849998,6.89799976 C 30.8320007,6.9920001 30.8610001,7.11299992 30.8710003,7.26300001 C 30.8810005,7.41300011 30.8869991,7.59499979 30.8869991,7.80800009 L 30.8869991,10 L 32.2970009,10 L 32.2970009,6.89099979 C 32.4580002,6.79699993 32.5950012,6.73000002 32.7070007,6.68900013 Z M 39.2610016,7.77400017 L 40.9679985,5.61299992 L 39.3549995,5.61299992 L 38.4290009,6.9000001 L 37.507,5.61299992 L 35.8660011,5.61299992 L 37.5690002,7.80299997 L 35.8390007,10 L 37.4469986,10 L 38.4090004,8.68700027 L 39.3470001,10 L 40.987999,10 L 39.2610016,7.77400017 Z" Fill="[SMSolidColorBrush]#ffb03c41" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 35,29 L 16,39 L 16,20 L 35,29 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							</Canvas>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DAQmx.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI:DAQmx:Internal:DAQmx\ Write\ \(Digital\ 1D\ Bool\ 1Chan\ 1Samp\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DAQmx Write (Digital 1D Bool 1Chan 1Samp)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1 M 46,0 L 4.08300018,0 C 1.88300002,0 0,1.74699998 0,3.94700003 L 0,46 C 0,48.2000008 1.88300002,50 4.08300018,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,3.94700003 C 50,1.74699998 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 48,46.0530014 C 48,47.1529999 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.1529999 2,46.0530014 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46.0530014 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 38.4790001,20.0230007 C 39.3069992,20.0189991 39.9939995,21.2679996 40.0040016,23.4769993 C 40.0149994,25.6860008 39.3400002,27.0189991 38.512001,27.0230007 L 35.0040016,27.0230007 L 35.0040016,20.0230007 L 38.4790001,20.0230007 M 15.9989996,24.3379993 L 22.0060005,26.0610008 L 19.5699997,24.5720005 L 21.4920006,22.5629997 L 20.4909992,22.3180008 L 21.9850006,21.0620003 L 15.993,22.8400002 L 15.9989996,24.3379993 Z M 22.0039997,27.0230007 L 11.4960003,23.6079998 L 22.0039997,20.0230007 L 30.0039997,20.0230007 L 30.0039997,27.0230007 L 22.0039997,27.0230007 Z M 33.0040016,26.9020004 L 33.0040016,19.9029999 C 33.0019989,19.3920002 34.0019989,19.4029999 34.0040016,19.8969994 L 34.0040016,26.8980007 C 34.007,27.4029999 33.0060005,27.3920002 33.0040016,26.9020004 Z M 31.0039997,26.9249992 L 31.0049992,19.9260006 C 31.0030003,19.4150009 32.0019989,19.4260006 32.0040016,19.9209995 L 32.0029984,26.9200001 C 32.0060005,27.4260006 31.0049992,27.4139996 31.0039997,26.9249992 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 14.1499996,5.63100004 C 13.9200001,5.21500015 13.6040001,4.88500023 13.2030001,4.64099979 C 12.9689999,4.49499989 12.6800003,4.3829999 12.3360004,4.30299997 C 11.9919996,4.22300005 11.5839996,4.18400002 11.1090002,4.18400002 L 9,4.18400002 L 9,10 L 11.0509996,10 C 11.5139999,10 11.9160004,9.9659996 12.2539997,9.89799976 C 12.592,9.82999992 12.9040003,9.71000004 13.1879997,9.53899956 C 13.5649996,9.31000042 13.8780003,8.98099995 14.1260004,8.55300045 C 14.3739996,8.125 14.4969997,7.63899994 14.4969997,7.09800005 C 14.4960003,6.53499985 14.3809996,6.046 14.1499996,5.63100004 Z M 12.7539997,8.05700016 C 12.6269999,8.31900024 12.4259996,8.52799988 12.1520004,8.68400002 C 11.993,8.77000046 11.8299999,8.82900047 11.6639996,8.86200047 C 11.4980001,8.89500046 11.2360001,8.90999985 10.8789997,8.90999985 L 10.5,8.90999985 L 10.5,5.26999998 L 10.8789997,5.26999998 C 11.2019997,5.26999998 11.4429998,5.28399992 11.6040001,5.31099987 C 11.7650003,5.33799982 11.9209995,5.38999987 12.0749998,5.46500015 C 12.3769999,5.61899996 12.5979996,5.83199978 12.7370005,6.10400009 C 12.8760004,6.37599993 12.9460001,6.704 12.9460001,7.08599997 C 12.9449997,7.47100019 12.8809996,7.79500008 12.7539997,8.05700016 Z M 18.5960007,4.18400002 L 16.8700008,4.18400002 L 14.7209997,10 L 16.2329998,10 L 16.6380005,8.82400036 L 18.7900009,8.82400036 L 19.1959991,10 L 20.7450008,10 L 18.5960007,4.18400002 Z M 16.9990005,7.7579999 L 17.7150002,5.67399979 L 18.4300003,7.7579999 L 16.9990005,7.7579999 Z M 26.5219994,8.88099957 C 26.8349991,8.38000011 26.9909992,7.78399992 26.9909992,7.09399986 C 26.9909992,6.15899992 26.7240009,5.42000008 26.1900005,4.87699986 C 25.6560001,4.33400011 24.9230003,4.0630002 23.9909992,4.0630002 C 23.0559998,4.0630002 22.323,4.33400011 21.7919998,4.87699986 C 21.2609997,5.42000008 20.9950008,6.15899992 20.9950008,7.09399986 C 20.9950008,7.98699999 21.2380009,8.69999981 21.7240009,9.2329998 C 22.2099991,9.76599979 22.8880005,10.0570002 23.757,10.1059999 C 23.7700005,10.335 23.8139992,10.5439997 23.8899994,10.7309999 C 23.9659996,10.9180002 24.0790005,11.0810003 24.2299995,11.2189999 C 24.3840008,11.3599997 24.5760002,11.4689999 24.8059998,11.5450001 C 25.0359993,11.6210003 25.3059998,11.6599998 25.6170006,11.6599998 C 25.9689999,11.6599998 26.2299995,11.6470003 26.3999996,11.6210003 C 26.5699997,11.5950003 26.7290001,11.5649996 26.875,11.5319996 L 26.875,10.5039997 L 26.7269993,10.5039997 C 26.6700001,10.533 26.5680008,10.5649996 26.4220009,10.6020002 C 26.2759991,10.6389999 26.1499996,10.6569996 26.0429993,10.6569996 C 25.7280006,10.6569996 25.5049992,10.6009998 25.375,10.4879999 C 25.2450008,10.3760004 25.1739998,10.1899996 25.1639996,9.93000031 C 25.757,9.73200035 26.2099991,9.38199997 26.5219994,8.88099957 Z M 24.5459995,8.9119997 C 24.3719997,8.98600006 24.1879997,9.02299976 23.9950008,9.02299976 C 23.802,9.02299976 23.6189995,8.98600006 23.4440002,8.91399956 C 23.2689991,8.84200001 23.1170006,8.72799969 22.9869995,8.57400036 C 22.8570004,8.42000008 22.7520008,8.22200012 22.6730003,7.97800016 C 22.5939999,7.73400021 22.5540009,7.43900013 22.5540009,7.09299994 C 22.5540009,6.75500011 22.5949993,6.45699978 22.677,6.19999981 C 22.7590008,5.94299984 22.8649998,5.7420001 22.9950008,5.59600019 C 23.1359997,5.44000006 23.2900009,5.32800007 23.4580002,5.26000023 C 23.6259995,5.19199991 23.8050003,5.15799999 23.9950008,5.15799999 C 24.1830006,5.15799999 24.3630009,5.19299984 24.5359993,5.26300001 C 24.7089996,5.33300018 24.8619995,5.44700003 24.9950008,5.60300016 C 25.125,5.75400019 25.2310009,5.95200014 25.3110008,6.19700003 C 25.3910007,6.44199991 25.4319992,6.73899984 25.4319992,7.08799982 C 25.4319992,7.41400003 25.3969994,7.69700003 25.3269997,7.9380002 C 25.257,8.1789999 25.1490002,8.38799953 25.0030003,8.56499958 C 24.8729992,8.72299957 24.7199993,8.8380003 24.5459995,8.9119997 Z M 32.7070007,6.68900013 C 32.8190002,6.64799976 32.9339981,6.62799978 33.0509987,6.62799978 C 33.2249985,6.62799978 33.3610001,6.64900017 33.4570007,6.69199991 C 33.5530014,6.73500013 33.6240005,6.80299997 33.6679993,6.89699984 C 33.7150002,6.99100018 33.743,7.11199999 33.7519989,7.26000023 C 33.7610016,7.40799999 33.7659988,7.59100008 33.7659988,7.80700016 L 33.7659988,10 L 35.1759987,10 L 35.1759987,7.14499998 C 35.1759987,6.61100006 35.0530014,6.20200014 34.8069992,5.91800022 C 34.5610008,5.63399982 34.2019997,5.4920001 33.7280006,5.4920001 C 33.4729996,5.4920001 33.2130013,5.55999994 32.9480019,5.69500017 C 32.6829987,5.82999992 32.4099998,6.0170002 32.1290016,6.25400019 C 32.0040016,6.00400019 31.8309994,5.81500006 31.6100006,5.68599987 C 31.3889999,5.55700016 31.1340008,5.49300003 30.8449993,5.49300003 C 30.5769997,5.49300003 30.3330002,5.546 30.1119995,5.65299988 C 29.8910007,5.76000023 29.6590004,5.90799999 29.4179993,6.09800005 L 29.4179993,5.61299992 L 28.0079994,5.61299992 L 28.0079994,10 L 29.4179993,10 L 29.4179993,6.89099979 C 29.5219994,6.82800007 29.6389999,6.76900005 29.7700005,6.71299982 C 29.9009991,6.65700006 30.0340004,6.62900019 30.1720009,6.62900019 C 30.3439999,6.62900019 30.4769993,6.6500001 30.5720005,6.69299984 C 30.6669998,6.73600006 30.7380009,6.8039999 30.7849998,6.89799976 C 30.8320007,6.9920001 30.8610001,7.11299992 30.8710003,7.26300001 C 30.8810005,7.41300011 30.8869991,7.59499979 30.8869991,7.80800009 L 30.8869991,10 L 32.2970009,10 L 32.2970009,6.89099979 C 32.4580002,6.79699993 32.5950012,6.73000002 32.7070007,6.68900013 Z M 39.2610016,7.77400017 L 40.9679985,5.61299992 L 39.3549995,5.61299992 L 38.4290009,6.9000001 L 37.507,5.61299992 L 35.8660011,5.61299992 L 37.5690002,7.80299997 L 35.8390007,10 L 37.4469986,10 L 38.4090004,8.68700027 L 39.3470001,10 L 40.987999,10 L 39.2610016,7.77400017 Z M 38,37 L 38,29 L 37,29 L 30,29 L 29,29 L 29,37 L 23,37 L 23,29 L 22,29 L 15,29 L 14,29 L 14,37 L 11,37 L 11,38 L 14,38 L 15,38 L 15,30 L 22,30 L 22,37 L 22,38 L 23,38 L 29,38 L 30,38 L 30,30 L 37,30 L 37,38 L 38,38 L 41,38 L 41,37 L 38,37 Z" Fill="[SMSolidColorBrush]#ffb03c41" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							</Canvas>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DAQmx.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI:DAQmx:Internal:DAQmx\ Stop\ Task\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DAQmx Stop Task" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+									<FontSetting FontFamily="Verdana" FontSize="9" />
+								</FileNameText>
+							</IconTemplate>
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1 M 46,0 L 4.08300018,0 C 1.88300002,0 0,1.74699998 0,3.94700003 L 0,46 C 0,48.2000008 1.88300002,50 4.08300018,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,3.94700003 C 50,1.74699998 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 48,46.0530014 C 48,47.1529999 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.1529999 2,46.0530014 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46.0530014 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 14.1499996,5.63100004 C 13.9200001,5.21500015 13.6040001,4.88500023 13.2030001,4.64099979 C 12.9689999,4.49499989 12.6800003,4.3829999 12.3360004,4.30299997 C 11.9919996,4.22300005 11.5839996,4.18400002 11.1090002,4.18400002 L 9,4.18400002 L 9,10 L 11.0509996,10 C 11.5139999,10 11.9160004,9.9659996 12.2539997,9.89799976 C 12.592,9.82999992 12.9040003,9.71000004 13.1879997,9.53899956 C 13.5649996,9.31000042 13.8780003,8.98099995 14.1260004,8.55300045 C 14.3739996,8.125 14.4969997,7.63899994 14.4969997,7.09800005 C 14.4960003,6.53499985 14.3809996,6.046 14.1499996,5.63100004 Z M 12.7539997,8.05700016 C 12.6269999,8.31900024 12.4259996,8.52799988 12.1520004,8.68400002 C 11.993,8.77000046 11.8299999,8.82900047 11.6639996,8.86200047 C 11.4980001,8.89500046 11.2360001,8.90999985 10.8789997,8.90999985 L 10.5,8.90999985 L 10.5,5.26999998 L 10.8789997,5.26999998 C 11.2019997,5.26999998 11.4429998,5.28399992 11.6040001,5.31099987 C 11.7650003,5.33799982 11.9209995,5.38999987 12.0749998,5.46500015 C 12.3769999,5.61899996 12.5979996,5.83199978 12.7370005,6.10400009 C 12.8760004,6.37599993 12.9460001,6.704 12.9460001,7.08599997 C 12.9449997,7.47100019 12.8809996,7.79500008 12.7539997,8.05700016 Z M 18.5960007,4.18400002 L 16.8700008,4.18400002 L 14.7209997,10 L 16.2329998,10 L 16.6380005,8.82400036 L 18.7900009,8.82400036 L 19.1959991,10 L 20.7450008,10 L 18.5960007,4.18400002 Z M 16.9990005,7.7579999 L 17.7150002,5.67399979 L 18.4300003,7.7579999 L 16.9990005,7.7579999 Z M 26.5219994,8.88099957 C 26.8349991,8.38000011 26.9909992,7.78399992 26.9909992,7.09399986 C 26.9909992,6.15899992 26.7240009,5.42000008 26.1900005,4.87699986 C 25.6560001,4.33400011 24.9230003,4.0630002 23.9909992,4.0630002 C 23.0559998,4.0630002 22.323,4.33400011 21.7919998,4.87699986 C 21.2609997,5.42000008 20.9950008,6.15899992 20.9950008,7.09399986 C 20.9950008,7.98699999 21.2380009,8.69999981 21.7240009,9.2329998 C 22.2099991,9.76599979 22.8880005,10.0570002 23.757,10.1059999 C 23.7700005,10.335 23.8139992,10.5439997 23.8899994,10.7309999 C 23.9659996,10.9180002 24.0790005,11.0810003 24.2299995,11.2189999 C 24.3840008,11.3599997 24.5760002,11.4689999 24.8059998,11.5450001 C 25.0359993,11.6210003 25.3059998,11.6599998 25.6170006,11.6599998 C 25.9689999,11.6599998 26.2299995,11.6470003 26.3999996,11.6210003 C 26.5699997,11.5950003 26.7290001,11.5649996 26.875,11.5319996 L 26.875,10.5039997 L 26.7269993,10.5039997 C 26.6700001,10.533 26.5680008,10.5649996 26.4220009,10.6020002 C 26.2759991,10.6389999 26.1499996,10.6569996 26.0429993,10.6569996 C 25.7280006,10.6569996 25.5049992,10.6009998 25.375,10.4879999 C 25.2450008,10.3760004 25.1739998,10.1899996 25.1639996,9.93000031 C 25.757,9.73200035 26.2099991,9.38199997 26.5219994,8.88099957 Z M 24.5459995,8.9119997 C 24.3719997,8.98600006 24.1879997,9.02299976 23.9950008,9.02299976 C 23.802,9.02299976 23.6189995,8.98600006 23.4440002,8.91399956 C 23.2689991,8.84200001 23.1170006,8.72799969 22.9869995,8.57400036 C 22.8570004,8.42000008 22.7520008,8.22200012 22.6730003,7.97800016 C 22.5939999,7.73400021 22.5540009,7.43900013 22.5540009,7.09299994 C 22.5540009,6.75500011 22.5949993,6.45699978 22.677,6.19999981 C 22.7590008,5.94299984 22.8649998,5.7420001 22.9950008,5.59600019 C 23.1359997,5.44000006 23.2900009,5.32800007 23.4580002,5.26000023 C 23.6259995,5.19199991 23.8050003,5.15799999 23.9950008,5.15799999 C 24.1830006,5.15799999 24.3630009,5.19299984 24.5359993,5.26300001 C 24.7089996,5.33300018 24.8619995,5.44700003 24.9950008,5.60300016 C 25.125,5.75400019 25.2310009,5.95200014 25.3110008,6.19700003 C 25.3910007,6.44199991 25.4319992,6.73899984 25.4319992,7.08799982 C 25.4319992,7.41400003 25.3969994,7.69700003 25.3269997,7.9380002 C 25.257,8.1789999 25.1490002,8.38799953 25.0030003,8.56499958 C 24.8729992,8.72299957 24.7199993,8.8380003 24.5459995,8.9119997 Z M 32.7070007,6.68900013 C 32.8190002,6.64799976 32.9339981,6.62799978 33.0509987,6.62799978 C 33.2249985,6.62799978 33.3610001,6.64900017 33.4570007,6.69199991 C 33.5530014,6.73500013 33.6240005,6.80299997 33.6679993,6.89699984 C 33.7150002,6.99100018 33.743,7.11199999 33.7519989,7.26000023 C 33.7610016,7.40799999 33.7659988,7.59100008 33.7659988,7.80700016 L 33.7659988,10 L 35.1759987,10 L 35.1759987,7.14499998 C 35.1759987,6.61100006 35.0530014,6.20200014 34.8069992,5.91800022 C 34.5610008,5.63399982 34.2019997,5.4920001 33.7280006,5.4920001 C 33.4729996,5.4920001 33.2130013,5.55999994 32.9480019,5.69500017 C 32.6829987,5.82999992 32.4099998,6.0170002 32.1290016,6.25400019 C 32.0040016,6.00400019 31.8309994,5.81500006 31.6100006,5.68599987 C 31.3889999,5.55700016 31.1340008,5.49300003 30.8449993,5.49300003 C 30.5769997,5.49300003 30.3330002,5.546 30.1119995,5.65299988 C 29.8910007,5.76000023 29.6590004,5.90799999 29.4179993,6.09800005 L 29.4179993,5.61299992 L 28.0079994,5.61299992 L 28.0079994,10 L 29.4179993,10 L 29.4179993,6.89099979 C 29.5219994,6.82800007 29.6389999,6.76900005 29.7700005,6.71299982 C 29.9009991,6.65700006 30.0340004,6.62900019 30.1720009,6.62900019 C 30.3439999,6.62900019 30.4769993,6.6500001 30.5720005,6.69299984 C 30.6669998,6.73600006 30.7380009,6.8039999 30.7849998,6.89799976 C 30.8320007,6.9920001 30.8610001,7.11299992 30.8710003,7.26300001 C 30.8810005,7.41300011 30.8869991,7.59499979 30.8869991,7.80800009 L 30.8869991,10 L 32.2970009,10 L 32.2970009,6.89099979 C 32.4580002,6.79699993 32.5950012,6.73000002 32.7070007,6.68900013 Z M 39.2610016,7.77400017 L 40.9679985,5.61299992 L 39.3549995,5.61299992 L 38.4290009,6.9000001 L 37.507,5.61299992 L 35.8660011,5.61299992 L 37.5690002,7.80299997 L 35.8390007,10 L 37.4469986,10 L 38.4090004,8.68700027 L 39.3470001,10 L 40.987999,10 L 39.2610016,7.77400017 Z" Fill="[SMSolidColorBrush]#ffb03c41" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 34,37 L 17,37 L 17,20 L 34,20 L 34,37 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							</Canvas>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DAQmx.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI:DAQmx:Internal:DAQmx\ Clear\ Task\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DAQmx Clear Task" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+									<FontSetting FontFamily="Verdana" FontSize="9" />
+								</FileNameText>
+							</IconTemplate>
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1 M 46,0 L 4.08300018,0 C 1.88300002,0 0,1.74699998 0,3.94700003 L 0,46 C 0,48.2000008 1.88300002,50 4.08300018,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,3.94700003 C 50,1.74699998 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 48,46.0530014 C 48,47.1529999 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.1529999 2,46.0530014 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46.0530014 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 14.1499996,5.63100004 C 13.9200001,5.21500015 13.6040001,4.88500023 13.2030001,4.64099979 C 12.9689999,4.49499989 12.6800003,4.3829999 12.3360004,4.30299997 C 11.9919996,4.22300005 11.5839996,4.18400002 11.1090002,4.18400002 L 9,4.18400002 L 9,10 L 11.0509996,10 C 11.5139999,10 11.9160004,9.9659996 12.2539997,9.89799976 C 12.592,9.82999992 12.9040003,9.71000004 13.1879997,9.53899956 C 13.5649996,9.31000042 13.8780003,8.98099995 14.1260004,8.55300045 C 14.3739996,8.125 14.4969997,7.63899994 14.4969997,7.09800005 C 14.4960003,6.53499985 14.3809996,6.046 14.1499996,5.63100004 Z M 12.7539997,8.05700016 C 12.6269999,8.31900024 12.4259996,8.52799988 12.1520004,8.68400002 C 11.993,8.77000046 11.8299999,8.82900047 11.6639996,8.86200047 C 11.4980001,8.89500046 11.2360001,8.90999985 10.8789997,8.90999985 L 10.5,8.90999985 L 10.5,5.26999998 L 10.8789997,5.26999998 C 11.2019997,5.26999998 11.4429998,5.28399992 11.6040001,5.31099987 C 11.7650003,5.33799982 11.9209995,5.38999987 12.0749998,5.46500015 C 12.3769999,5.61899996 12.5979996,5.83199978 12.7370005,6.10400009 C 12.8760004,6.37599993 12.9460001,6.704 12.9460001,7.08599997 C 12.9449997,7.47100019 12.8809996,7.79500008 12.7539997,8.05700016 Z M 18.5960007,4.18400002 L 16.8700008,4.18400002 L 14.7209997,10 L 16.2329998,10 L 16.6380005,8.82400036 L 18.7900009,8.82400036 L 19.1959991,10 L 20.7450008,10 L 18.5960007,4.18400002 Z M 16.9990005,7.7579999 L 17.7150002,5.67399979 L 18.4300003,7.7579999 L 16.9990005,7.7579999 Z M 26.5219994,8.88099957 C 26.8349991,8.38000011 26.9909992,7.78399992 26.9909992,7.09399986 C 26.9909992,6.15899992 26.7240009,5.42000008 26.1900005,4.87699986 C 25.6560001,4.33400011 24.9230003,4.0630002 23.9909992,4.0630002 C 23.0559998,4.0630002 22.323,4.33400011 21.7919998,4.87699986 C 21.2609997,5.42000008 20.9950008,6.15899992 20.9950008,7.09399986 C 20.9950008,7.98699999 21.2380009,8.69999981 21.7240009,9.2329998 C 22.2099991,9.76599979 22.8880005,10.0570002 23.757,10.1059999 C 23.7700005,10.335 23.8139992,10.5439997 23.8899994,10.7309999 C 23.9659996,10.9180002 24.0790005,11.0810003 24.2299995,11.2189999 C 24.3840008,11.3599997 24.5760002,11.4689999 24.8059998,11.5450001 C 25.0359993,11.6210003 25.3059998,11.6599998 25.6170006,11.6599998 C 25.9689999,11.6599998 26.2299995,11.6470003 26.3999996,11.6210003 C 26.5699997,11.5950003 26.7290001,11.5649996 26.875,11.5319996 L 26.875,10.5039997 L 26.7269993,10.5039997 C 26.6700001,10.533 26.5680008,10.5649996 26.4220009,10.6020002 C 26.2759991,10.6389999 26.1499996,10.6569996 26.0429993,10.6569996 C 25.7280006,10.6569996 25.5049992,10.6009998 25.375,10.4879999 C 25.2450008,10.3760004 25.1739998,10.1899996 25.1639996,9.93000031 C 25.757,9.73200035 26.2099991,9.38199997 26.5219994,8.88099957 Z M 24.5459995,8.9119997 C 24.3719997,8.98600006 24.1879997,9.02299976 23.9950008,9.02299976 C 23.802,9.02299976 23.6189995,8.98600006 23.4440002,8.91399956 C 23.2689991,8.84200001 23.1170006,8.72799969 22.9869995,8.57400036 C 22.8570004,8.42000008 22.7520008,8.22200012 22.6730003,7.97800016 C 22.5939999,7.73400021 22.5540009,7.43900013 22.5540009,7.09299994 C 22.5540009,6.75500011 22.5949993,6.45699978 22.677,6.19999981 C 22.7590008,5.94299984 22.8649998,5.7420001 22.9950008,5.59600019 C 23.1359997,5.44000006 23.2900009,5.32800007 23.4580002,5.26000023 C 23.6259995,5.19199991 23.8050003,5.15799999 23.9950008,5.15799999 C 24.1830006,5.15799999 24.3630009,5.19299984 24.5359993,5.26300001 C 24.7089996,5.33300018 24.8619995,5.44700003 24.9950008,5.60300016 C 25.125,5.75400019 25.2310009,5.95200014 25.3110008,6.19700003 C 25.3910007,6.44199991 25.4319992,6.73899984 25.4319992,7.08799982 C 25.4319992,7.41400003 25.3969994,7.69700003 25.3269997,7.9380002 C 25.257,8.1789999 25.1490002,8.38799953 25.0030003,8.56499958 C 24.8729992,8.72299957 24.7199993,8.8380003 24.5459995,8.9119997 Z M 32.7070007,6.68900013 C 32.8190002,6.64799976 32.9339981,6.62799978 33.0509987,6.62799978 C 33.2249985,6.62799978 33.3610001,6.64900017 33.4570007,6.69199991 C 33.5530014,6.73500013 33.6240005,6.80299997 33.6679993,6.89699984 C 33.7150002,6.99100018 33.743,7.11199999 33.7519989,7.26000023 C 33.7610016,7.40799999 33.7659988,7.59100008 33.7659988,7.80700016 L 33.7659988,10 L 35.1759987,10 L 35.1759987,7.14499998 C 35.1759987,6.61100006 35.0530014,6.20200014 34.8069992,5.91800022 C 34.5610008,5.63399982 34.2019997,5.4920001 33.7280006,5.4920001 C 33.4729996,5.4920001 33.2130013,5.55999994 32.9480019,5.69500017 C 32.6829987,5.82999992 32.4099998,6.0170002 32.1290016,6.25400019 C 32.0040016,6.00400019 31.8309994,5.81500006 31.6100006,5.68599987 C 31.3889999,5.55700016 31.1340008,5.49300003 30.8449993,5.49300003 C 30.5769997,5.49300003 30.3330002,5.546 30.1119995,5.65299988 C 29.8910007,5.76000023 29.6590004,5.90799999 29.4179993,6.09800005 L 29.4179993,5.61299992 L 28.0079994,5.61299992 L 28.0079994,10 L 29.4179993,10 L 29.4179993,6.89099979 C 29.5219994,6.82800007 29.6389999,6.76900005 29.7700005,6.71299982 C 29.9009991,6.65700006 30.0340004,6.62900019 30.1720009,6.62900019 C 30.3439999,6.62900019 30.4769993,6.6500001 30.5720005,6.69299984 C 30.6669998,6.73600006 30.7380009,6.8039999 30.7849998,6.89799976 C 30.8320007,6.9920001 30.8610001,7.11299992 30.8710003,7.26300001 C 30.8810005,7.41300011 30.8869991,7.59499979 30.8869991,7.80800009 L 30.8869991,10 L 32.2970009,10 L 32.2970009,6.89099979 C 32.4580002,6.79699993 32.5950012,6.73000002 32.7070007,6.68900013 Z M 39.2610016,7.77400017 L 40.9679985,5.61299992 L 39.3549995,5.61299992 L 38.4290009,6.9000001 L 37.507,5.61299992 L 35.8660011,5.61299992 L 37.5690002,7.80299997 L 35.8390007,10 L 37.4469986,10 L 38.4090004,8.68700027 L 39.3470001,10 L 40.987999,10 L 39.2610016,7.77400017 Z" Fill="[SMSolidColorBrush]#ffb03c41" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 19.0769997,39.4939995 C 18.4559994,40.0419998 17.0979996,39.519001 15.6370001,37.862999 C 14.1739998,36.2080002 13.8240004,34.7949982 14.4440002,34.2470016 L 17.0669994,31.9290009 L 21.7000008,37.1769981 L 19.0769997,39.4939995 M 33.1310005,21.4169998 L 27.4750004,24.0750008 L 30.2889996,23.5909996 L 30.1660004,26.3689995 L 31.0809994,25.8939991 L 30.7830009,27.823 L 34.1220016,22.5400009 L 33.1310005,21.4169998 Z M 26.8120003,23.3260002 L 37,19 L 31.4459991,28.573 L 25.4489994,33.868 L 20.816,28.6210003 L 26.8120003,23.3260002 Z M 18.6380005,30.6870003 L 23.2709999,35.9339981 C 23.6089993,36.3170013 22.8490009,36.9669991 22.5219994,36.5970001 L 17.8880005,31.3490009 C 17.5529995,30.9699993 18.3139992,30.3199997 18.6380005,30.6870003 Z M 20.1280003,29.3530006 L 24.7609997,34.5999985 C 25.0990009,34.9830017 24.3400002,35.6329994 24.0119991,35.2610016 L 19.3789997,30.0139999 C 19.0440006,29.6359997 19.8050003,28.9860001 20.1280003,29.3530006 Z M 14,39 L 13,40 L 14,41 L 15,40 L 14,39 Z M 17,40 L 16,41 L 17,42 L 18,41 L 17,40 Z M 11,33 L 10,34 L 11,35 L 12,34 L 11,33 Z M 20,40 L 19,41 L 20,42 L 21,41 L 20,40 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							</Canvas>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DAQmx.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI:G\ Core:Error:Display\ Error\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<Path Data="[PathGeometry]M 4,0 L 36,0 C 38.2089996,0 40,1.79100001 40,4 L 40,36 C 40,38.2089996 38.2089996,40 36,40 L 4,40 C 1.79100001,40 0,38.2089996 0,36 L 0,4 C 0,1.79100001 1.79100001,0 4,0" Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 4,1 L 36,1 C 37.6570015,1 39,2.34299994 39,4 L 39,36 C 39,37.6570015 37.6570015,39 36,39 L 4,39 C 2.34299994,39 1,37.6570015 1,36 L 1,4 C 1,2.34299994 2.34299994,1 4,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 4,2 L 36,2 C 37.1040001,2 38,2.89599991 38,4 L 38,36 C 38,37.1049995 37.1040001,38 36,38 L 4,38 C 2.89599991,38 2,37.1049995 2,36 L 2,4 C 2,2.89599991 2.89599991,2 4,2" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 4.00099993,2.00099993 C 2.89700007,2.00099993 2.00099993,2.96600008 2.00099993,4.15500021 L 2.00099993,16 L 16,16 L 16,2 L 4.00099993,2.00099993 Z M 4.23899984,11.3540001 L 4.02400017,9.42000008 L 7.89300013,9.42000008 L 4.23899984,11.3540001 Z M 3.4519999,5.96799994 L 5.0999999,4.03599977 L 8.89700031,7.90299988 L 3.4519999,5.96799994 Z M 12.9540005,14 L 10.2329998,14 L 10.2329998,12.2220001 L 12.9540005,12.2220001 L 12.9540005,14 Z M 12.6920004,11.1099997 L 10.4949999,11.1099997 L 10.1859999,3.97000003 L 13.0019999,3.97000003 L 12.6920004,11.1099997 Z" Fill="[SMSolidColorBrush]#ffa0a017" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 18,18 L 4,18 L 4,17 L 17,17 L 17,10 L 18,10 L 18,18 Z M 33.9710007,10 L 19,10 L 19,18 L 19,19 L 18,19 L 4,19 L 4,26.9710007 C 4,28.0919991 4.90799999,29 6.02899981,29 L 28,29 L 28,33 L 31.9710007,29 L 33.9710007,29 C 35.0909996,29 36,28.0919991 36,26.9710007 L 36,12.0290003 C 36,10.908 35.0909996,10 33.9710007,10 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI:DAQmx:Internal:DAQmx\ Create\ Task\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DAQmx Create Task" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+									<FontSetting FontFamily="Verdana" FontSize="9" />
+								</FileNameText>
+							</IconTemplate>
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1 M 46,0 L 4.08300018,0 C 1.88300002,0 0,1.74699998 0,3.94700003 L 0,46 C 0,48.2000008 1.88300002,50 4.08300018,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,3.94700003 C 50,1.74699998 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 48,46.0530014 C 48,47.1529999 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.1529999 2,46.0530014 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46.0530014 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 38,27.8330002 L 38,28.8330002 C 37,28.8330002 35.4830017,27.3409996 34.7150002,26.0240002 C 34.0149994,24.8239994 33.5169983,23.8330002 32.3250008,23.8330002 C 31.1329994,23.8330002 30.4659996,24.8239994 29.7649994,26.0249996 C 28.9960003,27.3409996 28.1149998,28.8330002 26.3050003,28.8330002 C 24.4950008,28.8330002 23.6040001,27.3409996 22.8369999,26.0240002 C 22.1369991,24.8239994 21.434,23.8330002 20.2439995,23.8330002 C 19.0550003,23.8330002 18.3099995,24.8239994 17.6110001,26.0249996 C 16.8430004,27.3409996 16,28.8330002 14,28.8330002 L 14,27.8330002 C 16,27.8330002 16.0170002,26.8419991 16.7159996,25.6410007 C 17.4839993,24.3250008 18.5189991,22.8330002 20.3269997,22.8330002 C 22.1359997,22.8330002 23.0060005,24.3250008 23.7730007,25.6410007 C 24.4729996,26.8419991 25.1340008,27.8330002 26.3260002,27.8330002 C 27.5179996,27.8330002 28.1800003,26.8419991 28.8810005,25.6410007 C 29.6499996,24.3250008 30.5209999,22.8330002 32.3300018,22.8330002 C 34.1389999,22.8330002 34.8429985,24.3250008 35.6119995,25.6410007 C 36.3120003,26.8419991 37,27.8330002 38,27.8330002 Z M 34,30.8330002 L 34,30 L 33.3330002,30 L 29.3330002,30 L 28,30 L 28,30.8330002 L 28,35 L 24,35 L 24,30.8330002 L 24,30 L 23.3330002,30 L 19.3330002,30 L 18,30 L 18,30.8330002 L 18,35 L 14,35 L 14,36 L 18.3330002,36 L 19,36 L 19,31 L 23,31 L 23,34.8330002 L 23,36 L 24.3330002,36 L 28.3330002,36 L 29,36 L 29,34.8330002 L 29,31 L 33,31 L 33,36 L 34.3330002,36 L 38,36 L 38,35 L 34,35 L 34,30.8330002 Z M 38,21 L 13.5059996,21 L 13.8870001,21.7329998 L 14.026,22 L 38,22 L 38,21 Z M 12,23.9050007 L 12,29 L 8,29 L 8,30 L 12,30 L 12,36.8330002 L 12,38 L 13.3330002,38 L 38,38 L 38,37 L 13,37 L 13,24.427 L 12.5369997,24.1860008 L 12,23.9050007 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 14.1499996,5.63100004 C 13.9200001,5.21500015 13.6040001,4.88500023 13.2030001,4.64099979 C 12.9689999,4.49499989 12.6800003,4.3829999 12.3360004,4.30299997 C 11.9919996,4.22300005 11.5839996,4.18400002 11.1090002,4.18400002 L 9,4.18400002 L 9,10 L 11.0509996,10 C 11.5139999,10 11.9160004,9.9659996 12.2539997,9.89799976 C 12.592,9.82999992 12.9040003,9.71000004 13.1879997,9.53899956 C 13.5649996,9.31000042 13.8780003,8.98099995 14.1260004,8.55300045 C 14.3739996,8.125 14.4969997,7.63899994 14.4969997,7.09800005 C 14.4960003,6.53499985 14.3809996,6.046 14.1499996,5.63100004 Z M 12.7539997,8.05700016 C 12.6269999,8.31900024 12.4259996,8.52799988 12.1520004,8.68400002 C 11.993,8.77000046 11.8299999,8.82900047 11.6639996,8.86200047 C 11.4980001,8.89500046 11.2360001,8.90999985 10.8789997,8.90999985 L 10.5,8.90999985 L 10.5,5.26999998 L 10.8789997,5.26999998 C 11.2019997,5.26999998 11.4429998,5.28399992 11.6040001,5.31099987 C 11.7650003,5.33799982 11.9209995,5.38999987 12.0749998,5.46500015 C 12.3769999,5.61899996 12.5979996,5.83199978 12.7370005,6.10400009 C 12.8760004,6.37599993 12.9460001,6.704 12.9460001,7.08599997 C 12.9449997,7.47100019 12.8809996,7.79500008 12.7539997,8.05700016 Z M 18.5960007,4.18400002 L 16.8700008,4.18400002 L 14.7209997,10 L 16.2329998,10 L 16.6380005,8.82400036 L 18.7900009,8.82400036 L 19.1959991,10 L 20.7450008,10 L 18.5960007,4.18400002 Z M 16.9990005,7.7579999 L 17.7150002,5.67399979 L 18.4300003,7.7579999 L 16.9990005,7.7579999 Z M 26.5219994,8.88099957 C 26.8349991,8.38000011 26.9909992,7.78399992 26.9909992,7.09399986 C 26.9909992,6.15899992 26.7240009,5.42000008 26.1900005,4.87699986 C 25.6560001,4.33400011 24.9230003,4.0630002 23.9909992,4.0630002 C 23.0559998,4.0630002 22.323,4.33400011 21.7919998,4.87699986 C 21.2609997,5.42000008 20.9950008,6.15899992 20.9950008,7.09399986 C 20.9950008,7.98699999 21.2380009,8.69999981 21.7240009,9.2329998 C 22.2099991,9.76599979 22.8880005,10.0570002 23.757,10.1059999 C 23.7700005,10.335 23.8139992,10.5439997 23.8899994,10.7309999 C 23.9659996,10.9180002 24.0790005,11.0810003 24.2299995,11.2189999 C 24.3840008,11.3599997 24.5760002,11.4689999 24.8059998,11.5450001 C 25.0359993,11.6210003 25.3059998,11.6599998 25.6170006,11.6599998 C 25.9689999,11.6599998 26.2299995,11.6470003 26.3999996,11.6210003 C 26.5699997,11.5950003 26.7290001,11.5649996 26.875,11.5319996 L 26.875,10.5039997 L 26.7269993,10.5039997 C 26.6700001,10.533 26.5680008,10.5649996 26.4220009,10.6020002 C 26.2759991,10.6389999 26.1499996,10.6569996 26.0429993,10.6569996 C 25.7280006,10.6569996 25.5049992,10.6009998 25.375,10.4879999 C 25.2450008,10.3760004 25.1739998,10.1899996 25.1639996,9.93000031 C 25.757,9.73200035 26.2099991,9.38199997 26.5219994,8.88099957 Z M 24.5459995,8.9119997 C 24.3719997,8.98600006 24.1879997,9.02299976 23.9950008,9.02299976 C 23.802,9.02299976 23.6189995,8.98600006 23.4440002,8.91399956 C 23.2689991,8.84200001 23.1170006,8.72799969 22.9869995,8.57400036 C 22.8570004,8.42000008 22.7520008,8.22200012 22.6730003,7.97800016 C 22.5939999,7.73400021 22.5540009,7.43900013 22.5540009,7.09299994 C 22.5540009,6.75500011 22.5949993,6.45699978 22.677,6.19999981 C 22.7590008,5.94299984 22.8649998,5.7420001 22.9950008,5.59600019 C 23.1359997,5.44000006 23.2900009,5.32800007 23.4580002,5.26000023 C 23.6259995,5.19199991 23.8050003,5.15799999 23.9950008,5.15799999 C 24.1830006,5.15799999 24.3630009,5.19299984 24.5359993,5.26300001 C 24.7089996,5.33300018 24.8619995,5.44700003 24.9950008,5.60300016 C 25.125,5.75400019 25.2310009,5.95200014 25.3110008,6.19700003 C 25.3910007,6.44199991 25.4319992,6.73899984 25.4319992,7.08799982 C 25.4319992,7.41400003 25.3969994,7.69700003 25.3269997,7.9380002 C 25.257,8.1789999 25.1490002,8.38799953 25.0030003,8.56499958 C 24.8729992,8.72299957 24.7199993,8.8380003 24.5459995,8.9119997 Z M 32.7070007,6.68900013 C 32.8190002,6.64799976 32.9339981,6.62799978 33.0509987,6.62799978 C 33.2249985,6.62799978 33.3610001,6.64900017 33.4570007,6.69199991 C 33.5530014,6.73500013 33.6240005,6.80299997 33.6679993,6.89699984 C 33.7150002,6.99100018 33.743,7.11199999 33.7519989,7.26000023 C 33.7610016,7.40799999 33.7659988,7.59100008 33.7659988,7.80700016 L 33.7659988,10 L 35.1759987,10 L 35.1759987,7.14499998 C 35.1759987,6.61100006 35.0530014,6.20200014 34.8069992,5.91800022 C 34.5610008,5.63399982 34.2019997,5.4920001 33.7280006,5.4920001 C 33.4729996,5.4920001 33.2130013,5.55999994 32.9480019,5.69500017 C 32.6829987,5.82999992 32.4099998,6.0170002 32.1290016,6.25400019 C 32.0040016,6.00400019 31.8309994,5.81500006 31.6100006,5.68599987 C 31.3889999,5.55700016 31.1340008,5.49300003 30.8449993,5.49300003 C 30.5769997,5.49300003 30.3330002,5.546 30.1119995,5.65299988 C 29.8910007,5.76000023 29.6590004,5.90799999 29.4179993,6.09800005 L 29.4179993,5.61299992 L 28.0079994,5.61299992 L 28.0079994,10 L 29.4179993,10 L 29.4179993,6.89099979 C 29.5219994,6.82800007 29.6389999,6.76900005 29.7700005,6.71299982 C 29.9009991,6.65700006 30.0340004,6.62900019 30.1720009,6.62900019 C 30.3439999,6.62900019 30.4769993,6.6500001 30.5720005,6.69299984 C 30.6669998,6.73600006 30.7380009,6.8039999 30.7849998,6.89799976 C 30.8320007,6.9920001 30.8610001,7.11299992 30.8710003,7.26300001 C 30.8810005,7.41300011 30.8869991,7.59499979 30.8869991,7.80800009 L 30.8869991,10 L 32.2970009,10 L 32.2970009,6.89099979 C 32.4580002,6.79699993 32.5950012,6.73000002 32.7070007,6.68900013 Z M 39.2610016,7.77400017 L 40.9679985,5.61299992 L 39.3549995,5.61299992 L 38.4290009,6.9000001 L 37.507,5.61299992 L 35.8660011,5.61299992 L 37.5690002,7.80299997 L 35.8390007,10 L 37.4469986,10 L 38.4090004,8.68700027 L 39.3470001,10 L 40.987999,10 L 39.2610016,7.77400017 Z M 12.3210001,18.9729996 L 13.7939997,16.1520004 L 10.9700003,17.6210003 L 10.0150003,14 L 9.05700016,17.6200008 L 6.23500013,16.1469994 L 7.704,18.9710007 L 4,19.9260006 L 7.704,20.8840008 L 6.23099995,23.7059994 L 9.05500031,22.2350006 L 10.0089998,25.8570004 L 10.9650002,22.2369995 L 13.7869997,23.7099991 L 12.3179998,20.8859997 L 15.9399996,19.9319992 L 12.3210001,18.9729996" Fill="[SMSolidColorBrush]#ffb03c41" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							</Canvas>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DAQmx.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI:DAQmx:Internal:DAQmx\ Create\ Channel\ \(DO\-Digital\ Output\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DAQmx Create Channel (DO-Digital Output)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]46">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.29299998 49,3.94700003 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4.08300018,49 C 2.4289999,49 1,47.6539993 1,46 L 1,3.94700003 C 1,2.29299998 2.4289999,1 4.08300018,1 L 46,1 M 46,0 L 4.08300018,0 C 1.88300002,0 0,1.74699998 0,3.94700003 L 0,46 C 0,48.2000008 1.88300002,50 4.08300018,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,3.94700003 C 50,1.74699998 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 48,46.0530014 C 48,47.1529999 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.1529999 2,46.0530014 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46.0530014 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 16.3209991,23.9729996 L 19.941,24.9309998 L 16.3190002,25.8850002 L 17.7880001,28.7089996 L 14.9659996,27.2360001 L 14.0100002,30.8560009 L 13.0559998,27.2339993 L 10.2320004,28.7049999 L 11.7049999,25.8829994 L 8,24.9260006 L 11.7040005,23.9720001 L 10.2349997,21.1480007 L 13.0570002,22.6210003 L 14.0150003,19 L 14.9689999,22.6219997 L 17.7929993,21.1529999 L 16.3209991,23.9729996 M 35,33 L 31,33 L 30,33 L 30,34 L 30,38 L 26,38 L 26,34 L 26,33 L 25,33 L 21,33 L 20,33 L 20,34 L 20,38 L 16,38 L 16,39 L 20,39 L 21,39 L 21,34 L 25,34 L 25,38 L 25,39 L 26,39 L 30,39 L 31,39 L 31,38 L 31,34 L 35,34 L 35,33 Z M 26,23 L 30.5809994,23 C 29.8069992,21.2360001 28.0499992,20 26,20 C 23.2360001,20 20.9950008,22.2409992 20.9950008,25.0049992 C 20.9950008,27.7689991 23.2360001,30.0100002 26,30.0100002 C 28.0550003,30.0100002 29.816,28.7700005 30.5869999,26.9990005 L 26,26.9990005 L 26,23 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 14.1499996,5.63100004 C 13.9200001,5.21500015 13.6040001,4.88500023 13.2030001,4.64099979 C 12.9689999,4.49499989 12.6800003,4.3829999 12.3360004,4.30299997 C 11.9919996,4.22300005 11.5839996,4.18400002 11.1090002,4.18400002 L 9,4.18400002 L 9,10 L 11.0509996,10 C 11.5139999,10 11.9160004,9.9659996 12.2539997,9.89799976 C 12.592,9.82999992 12.9040003,9.71000004 13.1879997,9.53899956 C 13.5649996,9.31000042 13.8780003,8.98099995 14.1260004,8.55300045 C 14.3739996,8.125 14.4969997,7.63899994 14.4969997,7.09800005 C 14.4960003,6.53499985 14.3809996,6.046 14.1499996,5.63100004 Z M 12.7539997,8.05700016 C 12.6269999,8.31900024 12.4259996,8.52799988 12.1520004,8.68400002 C 11.993,8.77000046 11.8299999,8.82900047 11.6639996,8.86200047 C 11.4980001,8.89500046 11.2360001,8.90999985 10.8789997,8.90999985 L 10.5,8.90999985 L 10.5,5.26999998 L 10.8789997,5.26999998 C 11.2019997,5.26999998 11.4429998,5.28399992 11.6040001,5.31099987 C 11.7650003,5.33799982 11.9209995,5.38999987 12.0749998,5.46500015 C 12.3769999,5.61899996 12.5979996,5.83199978 12.7370005,6.10400009 C 12.8760004,6.37599993 12.9460001,6.704 12.9460001,7.08599997 C 12.9449997,7.47100019 12.8809996,7.79500008 12.7539997,8.05700016 Z M 18.5960007,4.18400002 L 16.8700008,4.18400002 L 14.7209997,10 L 16.2329998,10 L 16.6380005,8.82400036 L 18.7900009,8.82400036 L 19.1959991,10 L 20.7450008,10 L 18.5960007,4.18400002 Z M 16.9990005,7.7579999 L 17.7150002,5.67399979 L 18.4300003,7.7579999 L 16.9990005,7.7579999 Z M 26.5219994,8.88099957 C 26.8349991,8.38000011 26.9909992,7.78399992 26.9909992,7.09399986 C 26.9909992,6.15899992 26.7240009,5.42000008 26.1900005,4.87699986 C 25.6560001,4.33400011 24.9230003,4.0630002 23.9909992,4.0630002 C 23.0559998,4.0630002 22.323,4.33400011 21.7919998,4.87699986 C 21.2609997,5.42000008 20.9950008,6.15899992 20.9950008,7.09399986 C 20.9950008,7.98699999 21.2380009,8.69999981 21.7240009,9.2329998 C 22.2099991,9.76599979 22.8880005,10.0570002 23.757,10.1059999 C 23.7700005,10.335 23.8139992,10.5439997 23.8899994,10.7309999 C 23.9659996,10.9180002 24.0790005,11.0810003 24.2299995,11.2189999 C 24.3840008,11.3599997 24.5760002,11.4689999 24.8059998,11.5450001 C 25.0359993,11.6210003 25.3059998,11.6599998 25.6170006,11.6599998 C 25.9689999,11.6599998 26.2299995,11.6470003 26.3999996,11.6210003 C 26.5699997,11.5950003 26.7290001,11.5649996 26.875,11.5319996 L 26.875,10.5039997 L 26.7269993,10.5039997 C 26.6700001,10.533 26.5680008,10.5649996 26.4220009,10.6020002 C 26.2759991,10.6389999 26.1499996,10.6569996 26.0429993,10.6569996 C 25.7280006,10.6569996 25.5049992,10.6009998 25.375,10.4879999 C 25.2450008,10.3760004 25.1739998,10.1899996 25.1639996,9.93000031 C 25.757,9.73200035 26.2099991,9.38199997 26.5219994,8.88099957 Z M 24.5459995,8.9119997 C 24.3719997,8.98600006 24.1879997,9.02299976 23.9950008,9.02299976 C 23.802,9.02299976 23.6189995,8.98600006 23.4440002,8.91399956 C 23.2689991,8.84200001 23.1170006,8.72799969 22.9869995,8.57400036 C 22.8570004,8.42000008 22.7520008,8.22200012 22.6730003,7.97800016 C 22.5939999,7.73400021 22.5540009,7.43900013 22.5540009,7.09299994 C 22.5540009,6.75500011 22.5949993,6.45699978 22.677,6.19999981 C 22.7590008,5.94299984 22.8649998,5.7420001 22.9950008,5.59600019 C 23.1359997,5.44000006 23.2900009,5.32800007 23.4580002,5.26000023 C 23.6259995,5.19199991 23.8050003,5.15799999 23.9950008,5.15799999 C 24.1830006,5.15799999 24.3630009,5.19299984 24.5359993,5.26300001 C 24.7089996,5.33300018 24.8619995,5.44700003 24.9950008,5.60300016 C 25.125,5.75400019 25.2310009,5.95200014 25.3110008,6.19700003 C 25.3910007,6.44199991 25.4319992,6.73899984 25.4319992,7.08799982 C 25.4319992,7.41400003 25.3969994,7.69700003 25.3269997,7.9380002 C 25.257,8.1789999 25.1490002,8.38799953 25.0030003,8.56499958 C 24.8729992,8.72299957 24.7199993,8.8380003 24.5459995,8.9119997 Z M 32.7070007,6.68900013 C 32.8190002,6.64799976 32.9339981,6.62799978 33.0509987,6.62799978 C 33.2249985,6.62799978 33.3610001,6.64900017 33.4570007,6.69199991 C 33.5530014,6.73500013 33.6240005,6.80299997 33.6679993,6.89699984 C 33.7150002,6.99100018 33.743,7.11199999 33.7519989,7.26000023 C 33.7610016,7.40799999 33.7659988,7.59100008 33.7659988,7.80700016 L 33.7659988,10 L 35.1759987,10 L 35.1759987,7.14499998 C 35.1759987,6.61100006 35.0530014,6.20200014 34.8069992,5.91800022 C 34.5610008,5.63399982 34.2019997,5.4920001 33.7280006,5.4920001 C 33.4729996,5.4920001 33.2130013,5.55999994 32.9480019,5.69500017 C 32.6829987,5.82999992 32.4099998,6.0170002 32.1290016,6.25400019 C 32.0040016,6.00400019 31.8309994,5.81500006 31.6100006,5.68599987 C 31.3889999,5.55700016 31.1340008,5.49300003 30.8449993,5.49300003 C 30.5769997,5.49300003 30.3330002,5.546 30.1119995,5.65299988 C 29.8910007,5.76000023 29.6590004,5.90799999 29.4179993,6.09800005 L 29.4179993,5.61299992 L 28.0079994,5.61299992 L 28.0079994,10 L 29.4179993,10 L 29.4179993,6.89099979 C 29.5219994,6.82800007 29.6389999,6.76900005 29.7700005,6.71299982 C 29.9009991,6.65700006 30.0340004,6.62900019 30.1720009,6.62900019 C 30.3439999,6.62900019 30.4769993,6.6500001 30.5720005,6.69299984 C 30.6669998,6.73600006 30.7380009,6.8039999 30.7849998,6.89799976 C 30.8320007,6.9920001 30.8610001,7.11299992 30.8710003,7.26300001 C 30.8810005,7.41300011 30.8869991,7.59499979 30.8869991,7.80800009 L 30.8869991,10 L 32.2970009,10 L 32.2970009,6.89099979 C 32.4580002,6.79699993 32.5950012,6.73000002 32.7070007,6.68900013 Z M 39.2610016,7.77400017 L 40.9679985,5.61299992 L 39.3549995,5.61299992 L 38.4290009,6.9000001 L 37.507,5.61299992 L 35.8660011,5.61299992 L 37.5690002,7.80299997 L 35.8390007,10 L 37.4469986,10 L 38.4090004,8.68700027 L 39.3470001,10 L 40.987999,10 L 39.2610016,7.77400017 Z M 41,25.0049992 L 31,20 L 33,24 L 27,24 L 27,26 L 33,26 L 31,30 L 41,25.0049992 Z" Fill="[SMSolidColorBrush]#ffb03c41" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							</Canvas>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DAQmx.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>
